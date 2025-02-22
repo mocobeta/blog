@@ -5,7 +5,7 @@
 #
 #=========================================================================================
 
-base_url = "https://mocobeta.dev"
+base_url = "https://blog.mocobeta.dev"
 title = "Keep Coding"
 description = "software engineer who loves search and coding"
 default_language = "en"
@@ -55,11 +55,11 @@ recent_max = 5
 recent_more_text = "more »"
 
 sections = [
-    { name = "blog", path = "/blog", is_external = false },
+    { name = "posts", path = "/posts", is_external = false },
     { name = "projects", path = "/projects", is_external = false },
     { name = "about", path = "/about", is_external = false },
 ]
-blog_section_path = "/blog"
+blog_section_path = "/posts"
 
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/mocobeta" },
