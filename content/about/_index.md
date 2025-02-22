@@ -35,11 +35,9 @@ You can find me on:
 
 LinkedIn [Tomoko Uchida](https://www.linkedin.com/in/tomoko-uchida-643195249/)
 
-GitHub [@modobeta](https://github.com/mocobeta)
+GitHub [@mocobeta](https://github.com/mocobeta)
 
 Bluesky [@mocobeta.bsky.social](https://bsky.app/profile/mocobeta.bsky.social)
-
-Medium [@mocobeta](https://medium.com/@mocobeta)
 
 E-mail [contact@mocobeta.dev](mailto:contact@mocobeta.dev)
 
