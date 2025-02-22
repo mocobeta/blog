@@ -13,6 +13,8 @@ comment = false
 reaction = false
 +++
 
+Hi there 👋, I am a software engineer who loves search and coding.
+
 ## OSS Products and Publications
 
 Listed in [projects](/projects)
