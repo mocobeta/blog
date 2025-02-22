@@ -1,0 +1,53 @@
+[[project]]
+name = "Janome"
+desc = "Japanese tokenizer library written entirely in Python"
+tags = ["python", "nlp"]
+# img = ""
+links = [
+  { name = "website", url = "https://janome.mocobeta.dev/" },
+  { name = "github", url = "https://github.com/mocobeta/janome" },
+]
+
+
+[[project]]
+name = "Apache Lucene (committer)"
+desc = "Search library written entirely in Java"
+tags = ["java", "search"]
+# img = ""
+links = [
+  { name = "website", url = "https://lucene.apache.org/" },
+  { name = "github", url = "https://github.com/apache/lucene" },
+]
+
+[[project]]
+name = "[archived] Luke (co-maintainer)"
+desc = "GUI tool for introspecting Lucene index"
+tags = ["java", "search"]
+links = [{ name = "github", url = "https://github.com/DmitryKey/luke" }]
+
+[[project]]
+name = "検索システム ― 実務者のための開発改善ガイドブック (共著)"
+desc = "2022年5月第1版発行"
+tags = ["book", "search"]
+links = [
+  { name = "website", url = "https://www.lambdanote.com/products/ir-system" },
+  { name = "amazon", url = "https://www.amazon.co.jp/dp/4908686130" },
+  { name = "github", url = "https://github.com/mocobeta/building-search-system-book" },
+]
+
+[[project]]
+name = "n月刊ラムダノート Vol.3, No.1 (寄稿)"
+desc = "2021年8月発行"
+tags = ["magazine"]
+links = [
+  { name = "website", url = "https://www.lambdanote.com/collections/n/products/nmonthly-vol-3-no-1-2021" },
+]
+
+[[project]]
+name = "改定第3版 Apache Solr入門 (共著)"
+desc = "2017年4月発行"
+tags = ["book", "search"]
+links = [
+  { name = "website", url = "https://gihyo.jp/book/2017/978-4-7741-8930-7" },
+  { name = "amazon", url = "https://www.amazon.co.jp/o/ASIN/4774189308" },
+]
