@@ -37,7 +37,7 @@ LinkedIn [Tomoko Uchida](https://www.linkedin.com/in/tomoko-uchida-643195249/)
 
 GitHub [@mocobeta](https://github.com/mocobeta)
 
-Bluesky [@mocobeta.bsky.social](https://bsky.app/profile/mocobeta.bsky.social)
+Bluesky [@mocobeta.dev](https://bsky.app/profile/mocobeta.dev)
 
 E-mail [contact@mocobeta.dev](mailto:contact@mocobeta.dev)
 
