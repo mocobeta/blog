@@ -7,7 +7,7 @@ categories = ["Posts"]
 tags = ["prose", "blogging"]
 +++
 
-何回目かのブログを始めた。今まではBloggerやMediumなど，いろいろなブログやCGMのサービスを使っていたのだけれど，今回は取得したまま塩漬けにしていた自分のドメイン`mocobeta.dev`で[Jamstack](https://jamstack.org/)を採用。[Zola](https://www.getzola.org/)という素晴らしいSSGツールに出会ったこと，GitHub + Cloudflare Worker (Pages) で，ソースコードリポジトリにマークダウンファイルをpushするだけで手軽にwebサイトが公開できるようになったことも大きい。
+何回目かのブログを始めた。今まではBloggerやMediumなど，いろいろなブログやUGCのサービスを使っていたのだけれど，今回は取得したまま塩漬けにしていた自分のドメイン`mocobeta.dev`で[Jamstack](https://jamstack.org/)を採用。[Zola](https://www.getzola.org/)という素晴らしいSSGツールに出会ったこと，GitHub + Cloudflare Worker (Pages) で，ソースコードリポジトリにマークダウンファイルをpushするだけで手軽にwebサイトが公開できるようになったことも大きい。
 
 再開しようと思ったきっかけは，
 
