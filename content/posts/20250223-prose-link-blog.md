@@ -21,4 +21,4 @@ tags = ["prose", "blogging"]
 
 [What to blog about - Simon Willison’s Weblog](https://simonwillison.net/2022/Nov/6/what-to-blog-about/)
 
-も，気負わずモチベーションを保つのにいいことが書かれている。
+にも，気負わず続けるモチベーションを保つのにいいことが書かれている。
