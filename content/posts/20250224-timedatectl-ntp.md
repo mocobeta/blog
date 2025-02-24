@@ -7,7 +7,7 @@ categories = ["Posts"]
 tags = ["til", "linux"]
 +++
 
-Arch Linuxは，インストール時のデフォルト設定だとシステムクロックがリモート時刻サーバーと同期されない。
+今日知った初心者殺しのトリビア：Arch Linuxは，インストール時のデフォルト設定だとシステムクロックがリモート時刻サーバーと同期されない。
 
 ```
 sudo timedatectl set-ntp true
