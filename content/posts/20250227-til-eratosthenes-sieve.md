@@ -19,7 +19,6 @@ tags = ["til", "algorithm"]
 
 コードを見ても何をしているのかわかりづらいと思うので，興味がある人はProject Eulerの[Problem 10](https://projecteuler.net/problem=10)を解いて解説を読んでほしい（解説自体の配布は禁止されているので注意）。
 
-
 ```rust
 pub struct EratosthenesSieve {
     limit: u64,
@@ -77,3 +76,93 @@ impl Iterator for EratosthenesSieve {
 }
 ```
 
+ちなみに，同じ最適化をCline(モデルはClaude 3.7 Sonnet)にさせてみると，3分くらいで上記と同等のコードが生成された。
+
+以下が，ナイーブなエラトステネスの篩の実装とユニットテストを与えて，"can you optimize EratosthenesSieve so that you hold only elements of odd numbers in the sieve array?"というプロンプトをClaude 3.7に与えて，最適化されたコード。
+
+```rust
+// Claude 3.7 Sonnetで最適化されたコード
+pub struct EratosthenesSieve {
+    limit: u64,
+    sieve: Vec<bool>, // Only stores odd numbers (3, 5, 7, ...)
+    ptr: usize,
+    returned_two: bool, // Flag to track if we've returned 2 already
+}
+
+impl EratosthenesSieve {
+    pub fn new(limit: u64) -> Self {
+        // Calculate size needed for odd numbers only
+        let size = (limit as usize + 1) / 2;
+        let mut sieve = EratosthenesSieve {
+            limit,
+            sieve: vec![true; size],
+            ptr: 0,
+            returned_two: false,
+        };
+        sieve.initialize();
+        sieve
+    }
+
+    // Convert from odd number to array index
+    #[inline]
+    fn to_index(n: usize) -> usize {
+        (n - 1) / 2
+    }
+
+    // Convert from array index to odd number
+    #[inline]
+    fn from_index(i: usize) -> u64 {
+        (2 * i + 1) as u64
+    }
+
+    fn initialize(&mut self) {
+        // Mark 1 as not prime (index 0 represents the number 1)
+        self.sieve[0] = false;
+
+        let stop = ((self.limit as f64).sqrt() + 1.0) as usize;
+
+        // For each odd number up to sqrt(limit)
+        for i in (3..=stop).step_by(2) {
+            let idx = Self::to_index(i);
+            if self.sieve[idx] {
+                // Mark all odd multiples of i as not prime
+                // Start from i*i (as smaller multiples would have been marked already)
+                let mut j = i * i;
+                while j < self.limit as usize {
+                    if j % 2 != 0 {
+                        // Only mark odd multiples
+                        self.sieve[Self::to_index(j)] = false;
+                    }
+                    j += i * 2; // Skip even multiples (they're already not in our sieve)
+                }
+            }
+        }
+    }
+}
+
+impl Iterator for EratosthenesSieve {
+    type Item = u64;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        // Special case for 2 (the only even prime)
+        if !self.returned_two {
+            self.returned_two = true;
+            return Some(2);
+        }
+
+        // Find the next odd prime
+        while self.ptr < self.sieve.len() {
+            if self.sieve[self.ptr] {
+                let prime = Self::from_index(self.ptr);
+                self.ptr += 1;
+                return Some(prime);
+            }
+            self.ptr += 1;
+        }
+
+        None
+    }
+}
+```
+
+配列のインデックスと対応する自然数のマッピングのための，`to_index()`と`from_index()`という2つのinline関数が追加されていて，自分が書いたコードよりも冗長とも言えるし，可読性が上がっているとも言える。こまかくコメントもつけられている。このくらいは朝飯前らしい。
