@@ -28,7 +28,7 @@ tags = ["prose"]
   - OSはスマホと合わせておくと何かと便利
 - デスクライト: KableRika LEDダブル光源電気スタンド クランプ式
 - Webカメラ: Anker PowerConf C200
-- USBハブ: Anker 332 USB-C (HDMIx1, USB-Ax2, USB-Cx2)
+- USBハブ: Anker 332 USB-Cハブ (HDMIx1, USB-Ax2, USB-Cx2)
   - LANポートもついてるやつにすれば良かったな...
 - ヘッドセット: Shokz OpenComm 骨伝導ワイヤレスヘッドフォン
 
