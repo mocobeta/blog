@@ -11,7 +11,7 @@ tags = ["til", "embedding", "benchmark"]
 
 ![](mmteb.png)
 
-実世界のさまざまなユースケースと言語をカバーするため，10個のタスクカテゴリ（ファミリー）があり，タスクの総数は全部で500個，言語はBitextMiningで1050言語，その他のタスクカテゴリで250言語を含んでいる。Massiveを謳うだけあってかなりの規模ですごい。言語によってタスク数が異なり，日本語だと35タスクで入手できる。
+実世界のさまざまなユースケースと言語をカバーするため，10個のタスクカテゴリ（ファミリー）があり，タスクの総数は全部で500個以上，言語はBitextMiningで1050言語，その他のタスクカテゴリで250言語を含んでいる。Massiveを謳うだけあってかなりの規模。言語によってタスク数が異なり，日本語だと35タスクで入手できる。
 
 [リーダーボード](https://huggingface.co/spaces/mteb/leaderboard)を見ると，上位には`gemini-embedding-exp-03-07`, `Linq-Embed-Mistral`, `gte-Qwen2-7B-instruct`, `multilingual-e5-large-instruct`といったモデルが並んでいて(2025/3/20現在)，SoTAモデルをさっと調べるのに良さそう。
 
