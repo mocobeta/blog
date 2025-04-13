@@ -13,7 +13,7 @@ tags = ["til", "llm", "AI agent"]
 
 - (video) [What's next for AI agentic workflows ft. Andrew Ng of AI Fund](https://www.youtube.com/watch?v=sal78ACtGTc)
 
-スライドの中では，「Agentic Reasong Design Pattern」と紹介されているもので，Agentic workflowは，Reflection, Tool Use, Planning, Multi-agent collabolationの４つのパターン（カテゴリ）に分類されると説明されている。1年前に公開された動画なので，周回遅れかもしれないけれど，2025年現在でも十分にワークする思考のフレームワークだと思う。
+スライドの中では，「Agentic Reasong Design Pattern」と紹介されているもので，Agentic workflowは，**Reflection**, **Tool Use**, **Planning**, **Multi-agent collabolation**の４つのパターン（カテゴリ）に分類されると説明されている。1年前に公開された動画なので，周回遅れかもしれないけれど，2025年現在でも十分にワークする思考のフレームワークだと思う。
 
 [LLMエージェントのデザインパターン、Agentic Design Patternsを理解する (via 株式会社ログラス テックブログ)](https://zenn.dev/loglass/articles/b9ee37737deb85) など，上記動画の日本語による紹介もいくつかある。
 
