@@ -7,7 +7,9 @@ categories = ["Posts"]
 tags = ["til", "llm", "AI agent"]
 +++
 
-流行のAI agentについて，重い腰を上げて学んでいる。断片的な最新情報とバズワードの洪水に圧倒されつつ，できるだけ体系的な理解を求めて調べていて，AI agent/Agentic workflowのためのフレームワーク・デザインパターンをAndrew Ng氏が与えているのを見つけた。
+## AI agentのためのデザインパターン
+
+流行のAI agentについて，重い腰を上げて学んでいる。断片的な最新情報とバズワードの洪水に圧倒されながら，できるだけ体系的な理解を求めて調べていて，AI agent/Agentic workflowのためのフレームワーク・デザインパターンをAndrew Ng氏が与えているのを見つけた。
 
 - (video) [What's next for AI agentic workflows ft. Andrew Ng of AI Fund](https://www.youtube.com/watch?v=sal78ACtGTc)
 
@@ -36,6 +38,6 @@ Ng先生の説明はアカデミックでハイレベルなので，実装には
 
 Ng先生のAgentic workflowの定義には，agentの自律性を制限するというような意味づけはなく，PlanningやMulti-agent collaborationといった高度に自律的なパターンも含まれる。個人的にはNg先生の定義のほうがより包括的で良いかなと感じている。
 
-### AI agent/Agentic workflow開発キット
+## AI agent/Agentic workflow開発キット
 
 現時点では，人気という点で[LangGraph](https://github.com/langchain-ai/langgraph)一強という印象。OpenAIも最近[Agents SDK](https://github.com/openai/openai-agents-python)をリリースしていて，数日前にはGoogleが[Agent Development Kit](https://github.com/google/adk-python)を発表して話題になった。なお言語の選択肢は限られていて，メジャーなツールはどれもPythonベース。LangGraphだけJavaScript(TypeScript)もサポートしている。
