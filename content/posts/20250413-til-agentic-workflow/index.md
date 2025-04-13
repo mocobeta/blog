@@ -9,7 +9,7 @@ tags = ["til", "llm", "AI agent"]
 
 ## AI agentのためのデザインパターン
 
-流行のAI agentについて，重い腰を上げて学んでいる。断片的な最新情報とバズワードの洪水に圧倒されながら，できるだけ体系的な理解を求めて調べていて，AI agent/Agentic workflowのためのフレームワーク・デザインパターンをAndrew Ng氏が与えているのを見つけた。
+数年前の[ReAct](https://www.promptingguide.ai/techniques/react)までで知識が止まっていたAI agent周辺について学んでいる。断片的な最新情報とバズワードの洪水に圧倒されながら，できるだけ体系的な理解を求めて調べていて，AI agent/Agentic workflowのためのフレームワーク・デザインパターンをAndrew Ng氏が与えているのを見つけた。
 
 - (video) [What's next for AI agentic workflows ft. Andrew Ng of AI Fund](https://www.youtube.com/watch?v=sal78ACtGTc)
 
