@@ -4,7 +4,7 @@ date = "2025-04-13"
 
 [taxonomies]
 categories = ["Posts"]
-tags = ["til", "AI agent", "agentic workflow"]
+tags = ["til", "llm", "AI agent"]
 +++
 
 流行のAI agentについて，重い腰を上げて学んでいる。断片的な最新情報とバズワードの洪水に圧倒されつつ，できるだけ体系的な理解を求めて調べていて，AI agent/Agentic workflowのためのフレームワーク・デザインパターンをAndrew Ng氏が与えているのを見つけた。
