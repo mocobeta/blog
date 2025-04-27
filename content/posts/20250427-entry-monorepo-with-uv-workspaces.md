@@ -5,9 +5,6 @@ date = "2025-04-27"
 [taxonomies]
 categories = ["Posts"]
 tags = ["entry", "python", "uv"]
-
-[extra]
-featured = true
 +++
 
 # この記事で言いたいこと
@@ -26,7 +23,7 @@ uvのworkspacesならRust(Cargo)のようにスッキリとモノレポ管理が
 
 # 要件（実現したいこと）
 
-ひとくちにモノレポといっても，その定義は開発チームが実現したいことによってさまざまだろう。この記事で私が実現したい主要な要件は以下の通り。
+ひとくちにモノレポといっても，その定義は開発チームが実現したいことによってさまざま。この記事で私が実現したい主要な要件は以下の通り。
 
 - 1つのリポジトリで複数のPythonパッケージ（つまり`pyproject.toml`）を管理したい
 - Pythonバージョンや，`ruff`, `pyright`などの開発ツールキットはプロジェクトルートの`pyproject.toml`で統一したい
@@ -174,7 +171,7 @@ build-backend = "hatchling.build"
 
 この制約があることで，個人的にはモノレポが満たしていてほしい性質が担保される（依存関係がコンフリクトしているモノレポは管理がつらいし，そもそもモノレポ管理の必要性が疑わしい気がする）。
 
-なお，ここではルートパッケージでPythonバージョンを`>=3.13`で統一しているが，`required-python`はサブパッケージごとに定義できるため，パッケージごとに異なるPythonバージョンを指定することもできる。モノレポ内で，違うPythonバージョンはあまり使いたくないけれど，やむにやまれぬ事情（とは）でどうしてもパッケージごとに異なるPythonバージョンを指定したい時はあるかもしれない。
+なお，ここではルートパッケージでPythonバージョンを`>=3.13`で統一しているが，`required-python`はサブパッケージごとに定義できるため，パッケージごとに異なるPythonバージョンを指定することもできる。モノレポ内で，違うPythonバージョンはあまり使いたくないけれど，やむにやまれぬ事情でどうしてもパッケージごとに異なるPythonバージョンを指定したい時はあるかもしれない。
 
 ## dependency graphの確認
 
@@ -330,6 +327,7 @@ $ tree -L2
 ├── README.md
 └── uv.lock
 
+# workspacesのメンバーに，新規作成したパッケージが追加されている
 $ cat ./pyproject.toml
 ...
 [tool.uv.workspace]
@@ -343,6 +341,8 @@ members = [
 ]
 ```
 
+## サブパッケージの依存関係を更新
+
 `eggdishes-boiled`は`eggdishes-core`に依存するので，依存関係を追加する。
 
 ```bash
@@ -355,7 +355,30 @@ dependencies = ["eggdishes-core"]
 eggdishes-core = { workspace = true }
 ```
 
-その他の拡張ライブラリも同様。
+その他の拡張パッケージも同様。
+
+また，`eggdishes-main`はすべての拡張パッケージを呼び出すため，`eggdishes-main/pyproject.toml`に以下を追加。
+
+```bash
+$ vi eggdishes-main/pyproject.toml
+[project]
+...
+dependencies = [
+    "click>=8.1.8",
+    "eggdishes-core",
+    "eggdishes-boiled",
+    "eggdishes-poached",
+    "eggdishes-scrambled",
+    "eggdishes-sunnysideup",
+]
+
+[tool.uv.sources]
+eggdishes-core = { workspace = true }
+eggdishes-boiled = { workspace = true }
+eggdishes-poached = { workspace = true }
+eggdishes-scrambled = { workspace = true }
+eggdishes-sunnysideup = { workspace = true }
+```
 
 ## 拡張ライブラリパッケージのコード例
 
@@ -389,9 +412,9 @@ class BoiledEgg(EggDish):
 """
 ```
 
-のような感じで，他の拡張パッケージについても，同様に`EggDish`の実装クラスを作っておく。
+のような感じで，他の拡張パッケージについても，同様に`EggDish`の実装クラスをそれぞれ生やしておく。
 
-CLIアプリケーションのほうは，追加した拡張を読み込んで，`recipe`コマンドの引数に応じて挙動が切り替えられるようにする。
+CLIアプリケーションのほうは，追加した拡張をインポートして，`recipe`コマンドの引数に応じて挙動が切り替えられるようにする。
 
 ```python
 # eggdishes-main/src/eggdishes_main/cli.py
@@ -485,15 +508,15 @@ Recipe for Scrambled Egg:
 
 # その他の話題
 
-その他，開発にあたっての雑多なトピックを補足しておく。
+その他，雑多なトピックを補足しておく。
 
 ## workspacesの標準ディレクトリ構成
 
-プロジェクト内にサブパッケージをどう配置するかについての縛りはないので，自由に配置できる。ただし，workspacesの公式ドキュメンテーションでは，`<project-root>/packages/`以下にサブパッケージを配置する例が書かれているので，この記事のようにルートディレクトリ直下にパッケージを置かず`pakcages/eggdishes-core`のように一段下げて配置するのが標準または推奨構成だと思う。サンプルコードを書いたあとで気づいた。。。
+プロジェクト内にサブパッケージをどう配置するかについての縛りはないので，自由に配置できる。ただし，workspacesの公式ドキュメンテーションでは，`<project-root>/packages/`以下にサブパッケージを配置する例が書かれているので，この記事のようにルートディレクトリ直下にパッケージを置かずに，`pakcages/eggdishes-core`のように一段下げて配置するのが標準か推奨構成と思われる。サンプルコードを書いたあとで気づいた。。。
 
 ## dev dependency
 
-`ruff`や`pyright`のような開発ツールは，ルートのdev dependencyに追加すればOK。
+`ruff`や`pyright`のような開発ツールは，ルートのdev dependency groupに追加すればOK。
 
 ```bash
 $ uv add pyright --dev
@@ -542,6 +565,7 @@ eggdishes-main v0.2.0
 ## パッケージビルドと配布
 
 PyPIなどに公開する場合は，シングルパッケージの時と同じく`build`と`publish`で。
+
 ```bash
 # --all-pakcagesオプションを指定してbuildすると，workspaces内のすべてのパッケージが一気にビルドされる
 $ uv build --all-packages
@@ -572,6 +596,6 @@ Successfully built dist/eggdishes_core-0.2.0-py2.py3-none-any.whl
 $ uv publish --index <INDEX> --token <TOKEN> dist/*
 ```
 
-# 最後に（所感）
+# 所感
 
-数日かけてuv workspacesの機能と動作を試してみて，個人的に理想に近いモノレポ構成が実現できそうな感触をもった。プロジェクトが一定の規模に成長すると，一定のコントロールを効かせながら，かつ実装をサブパッケージに分けて分割管理したいケースがよくある。今後使う機会が増えそう。
+少し丁寧にuv workspacesの機能と動作を試してみて，個人的に理想に近いモノレポ構成が実現できそうな感触をもった。プロジェクトが一定の規模に成長すると，モノレポとして一定のコントロールを効かせながら，かつ実装と依存関係をサブ機能（サブパッケージ）ごとに分けて分割管理したいケースがよくある。今後使う機会が増えそう。
