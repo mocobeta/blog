@@ -3,7 +3,7 @@ title = "uv workspacesでスッキリ作るPythonモノレポ"
 date = "2025-04-27"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Long Posts"]
 tags = ["entry", "python", "uv"]
 +++
 

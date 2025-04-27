@@ -3,11 +3,8 @@ title = "link blogを始める"
 date = "2025-02-23"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["prose", "blogging"]
-
-[extra]
-featured = true
 +++
 
 何回目かのブログを始めた。今まではBloggerやMediumなど，いろいろなブログやUGCのサービスを使っていたのだけれど，今回は取得したまま塩漬けにしていた自分のドメイン`mocobeta.dev`で[Jamstack](https://jamstack.org/)を採用。[Zola](https://www.getzola.org/)という素晴らしいSSGツールに出会ったこと，GitHub + Cloudflare Worker (Pages) で，ソースコードリポジトリにマークダウンファイルをpushするだけで手軽にwebサイトが公開できるようになったことも大きい。

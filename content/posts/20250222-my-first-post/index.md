@@ -3,7 +3,7 @@ title = "Initial post"
 date = "2025-02-22"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = []
 +++
 

@@ -3,7 +3,7 @@ title = "Andrew Ng氏による\"Agentic workflowのためのデザインパタ�
 date = "2025-04-13"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["til", "llm", "AI agent"]
 +++
 

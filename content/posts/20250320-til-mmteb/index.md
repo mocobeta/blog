@@ -3,7 +3,7 @@ title = "MMTEB: Embeddingのための新しい多言語ベンチマーク"
 date = "2025-03-20"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["til", "embedding", "benchmark"]
 +++
 

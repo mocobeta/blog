@@ -3,7 +3,7 @@ title = "DeepSeek-R1のビジュアルガイドを読んだ"
 date = "2025-02-24"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["til", "llm", "deepseek"]
 +++
 

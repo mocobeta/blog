@@ -3,7 +3,7 @@ title = "自宅ワークスペース環境"
 date = "2025-03-01"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["prose"]
 +++
 

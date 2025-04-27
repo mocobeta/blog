@@ -3,7 +3,7 @@ title = "素数発見法エラトステネスの篩の最適化 with Claude 3.7"
 date = "2025-02-27"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["til", "algorithm", "claude"]
 +++
 

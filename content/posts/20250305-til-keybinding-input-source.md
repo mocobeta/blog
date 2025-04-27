@@ -3,7 +3,7 @@ title = "Windows向けUS配列キーボードをLinux/MacOSで切り替えて使
 date = "2025-03-05"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["til", "linux", "macOS"]
 +++
 

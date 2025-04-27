@@ -3,7 +3,7 @@ title = "Zoteroをデーモンで起動する"
 date = "2025-02-23"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["til", "linux", "zotero"]
 +++
 

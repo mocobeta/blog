@@ -3,7 +3,7 @@ title = "出戻り転職をした"
 date = "2025-03-06"
 
 [taxonomies]
-categories = ["Posts"]
+categories = ["Short Posts"]
 tags = ["prose", "career"]
 +++
 
