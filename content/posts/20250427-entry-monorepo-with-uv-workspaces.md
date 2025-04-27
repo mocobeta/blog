@@ -12,15 +12,15 @@ featured = true
 
 # この記事で言いたいこと
 
-uvはいいぞ。Pythonでモノレポするならuvを使おう！
+uvはいいぞ。Pythonでモノレポするならuv workspacesを使おう！
 
 # イントロダクション
 
-新興でありながら，Python界でデファクトになりつつあるパッケージ／プロジェクト管理ツールの[uv](https://docs.astral.sh/uv/)。
+Python界でデファクトになりつつある新興パッケージ／プロジェクト管理ツールの[uv](https://docs.astral.sh/uv/)。
 
-uvには，[workspaces](https://docs.astral.sh/uv/concepts/projects/workspaces/)という，マルチパッケージをサポートするための機能がある（[Cargoにある同名の機能](https://doc.rust-lang.org/cargo/reference/workspaces.html)からインスパイアされたもので，Rustを使っている人には馴染み深いコンセプトだろう）。
+uvには，[workspaces](https://docs.astral.sh/uv/concepts/projects/workspaces/)という，マルチパッケージをサポートするための機能がある。[Cargoにある同名の機能](https://doc.rust-lang.org/cargo/reference/workspaces.html)からインスパイアされたもので，Rustを使っている人には馴染み深いコンセプトだろう。
 
-これまで，Pythonでモノレポ構成を作るための，これといったソリューションはなかったように思う。Bazelは小規模プロジェクトで使うには正直とっつきづらく，Poetryでも頑張ればできると思うのだけれど，Poetryそのものはマルチパッケージ構成をサポートしていないためdependency groupを駆使するなどしなければならず，一筋縄ではいかない。
+これまで，Pythonでモノレポ構成を作るための，これといって決め手となるソリューションはなかったように思う。Bazelは小規模プロジェクトで使うには正直とっつきづらく，Poetryでも頑張ればできると思うのだけれど，Poetryそのものはマルチパッケージ構成をサポートしていないためdependency groupを駆使するなどしなければならず，一筋縄ではいかない。
 
 uvのworkspacesならRust(Cargo)のようにスッキリとモノレポ管理ができるのでは，と思って試したところ，かなりいい感じにできそうだったので，少し詳細に手順と構成をまとめておく。
 
