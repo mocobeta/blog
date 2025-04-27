@@ -4,7 +4,7 @@ date = "2025-04-27"
 
 [taxonomies]
 categories = ["Long Posts"]
-tags = ["entry", "python", "uv"]
+tags = ["in-depth", "python", "uv"]
 +++
 
 # この記事で言いたいこと
