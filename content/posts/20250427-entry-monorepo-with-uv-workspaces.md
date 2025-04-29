@@ -600,4 +600,4 @@ $ uv publish --index <INDEX> --token <TOKEN> dist/*
 
 少し丁寧にuv workspacesの機能と動作を試してみて，個人的に理想に近いモノレポ構成が実現できそうな感触をもった。プロジェクトが一定の規模に成長すると，モノレポとして一定のコントロールを効かせながら，かつ実装と依存関係をサブ機能（サブパッケージ）ごとに分けて分割管理したいケースがよくある。今後使う機会が増えそう。
 
-続編: [uv workspacesとpluggyで作る，プラッガブルなPythonエコシステム](https://blog.mocobeta.dev/posts/20250429-entry-pluggy-uv-workspace/)
+続編があります: [uv workspacesとpluggyで作る，プラッガブルなPythonエコシステム](https://blog.mocobeta.dev/posts/20250429-entry-pluggy-uv-workspace/)
