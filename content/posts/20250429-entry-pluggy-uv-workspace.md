@@ -25,6 +25,10 @@ uv workspacesのcommon use caseとして，「プラグインシステム」が�
 
 この記事では，前回作ったモノレポにpluggyを導入して，CLIアプリケーションから拡張ライブラリへの依存を剥がし，ドロップイン方式で拡張ライブラリが実行できるようにしていく。
 
+# toy projectのサンプルコード
+
+[https://github.com/mocobeta/uv-workspaces-eggdishes](https://github.com/mocobeta/uv-workspaces-eggdishes)
+
 # pluggy入門
 
 pluggyの使い方は少し込み入っていて，公式リファレンスを読んでもとっつきづらいため，実際に自分のプロジェクトに導入しながら手を動かすほうが理解がすすむ。
