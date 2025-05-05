@@ -28,7 +28,11 @@ endif -%}
 <meta property="og:title" content="{{ page.title }} | {{ config.title }} by @{{ config.extra.id }} ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.permalink }}">
+{% if page.extra.cover %}
+<meta property="og:image" content="{{ page.permalink }}{{ page.extra.cover }}">
+{% else %}
 <meta property="og:image" content="/img/search-system-book-penguin.jpg">
+{% endif %}
 {% endblock head %}
 
 {% block content %}

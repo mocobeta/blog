@@ -5,6 +5,9 @@ date = "2025-03-20"
 [taxonomies]
 categories = ["Short Posts"]
 tags = ["til", "embedding", "benchmark"]
+
+[extra]
+cover = "mmteb.png"
 +++
 
 最近のEmbeddingモデルについて調べていて，[MMTEB (Massive Multilingual Text Embedding Benchmark)](https://huggingface.co/papers/2502.13595)という，Text Embeddingのための新しい多言語ベンチマークがリリースされていることを知った。前身のMTEBというベンチマークにタスクと言語をたくさん追加したものらしい。ICLR2025にアクセプトされたペーパーなので，かなり新しい。

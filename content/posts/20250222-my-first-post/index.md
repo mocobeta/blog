@@ -5,6 +5,9 @@ date = "2025-02-22"
 [taxonomies]
 categories = ["Short Posts"]
 tags = []
+
+[extra]
+cover = "kitty.jpg"
 +++
 
 Hello [Zola](https://www.getzola.org/)!
