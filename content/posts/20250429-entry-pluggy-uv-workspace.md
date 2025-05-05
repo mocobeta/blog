@@ -74,6 +74,8 @@ from .hookspecs import hookimpl
 
 プラグインのスペックと実装をつなぐPluginManagerのコードを，同じくコアライブラリに追加する。pluggyを使う上で，たぶんここが一番ややこしいので，細かくコメントをつけてみた。
 
+(2025/5/5 更新)
+
 ```python
 # eggdishes-core/src/eggdishes_core/plugins.py
 from .lib import EggDish
@@ -103,9 +105,7 @@ def register_eggdishes():
     """Register available recipes to the registry."""
     pm = __get_plugin_manager()
     # 環境内のすべてのプラグインフックを呼び出す
-    for recipe in pm.hook.register_eggdish(recipes=__recipes):
-        if recipe:
-            __recipes[recipe.name] = recipe
+    pm.hook.register_eggdish(recipes=__recipes)
 
 
 def get_available_recipes():
@@ -325,7 +325,7 @@ Recipe for Sunny Side Up Egg:
 完成！
 ```
 
-ここまでのコードは[0.4.0](https://github.com/mocobeta/uv-workspaces-eggdishes/tree/0.4.0)としてタグを打っているので，全体感はこのタグのソースツリーを参照してほしい。
+ここまでのコードは[0.5.0](https://github.com/mocobeta/uv-workspaces-eggdishes/tree/0.5.0)としてタグを打っているので，全体感はこのタグのソースツリーを参照してほしい。
 
 # まとめ
 
