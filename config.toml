@@ -7,7 +7,7 @@
 
 base_url = "https://blog.mocobeta.dev"
 title = "Keep Coding"
-description = "software engineer who loves search and coding"
+description = "Blog by a software engineer who loves search and coding"
 default_language = "en"
 theme = "serene"
 output_dir = "public"
