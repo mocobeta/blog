@@ -36,11 +36,13 @@ Zolaテーマのカスタマイズ方法は，[Customizing a theme](https://www.
 
 [https://github.com/mocobeta/blog/blob/main/templates/post.html](https://github.com/mocobeta/blog/blob/main/templates/post.html)
 
-`og:image` は，ブログポスト内にカバーイメージがある場合はそれを使い，なければデフォルトの画像にフォールバックするようにしている。
+`og:image` は，ブログポスト内にカバーイメージがある場合はそれを使い，なければデフォルトのアイキャッチ画像にフォールバックするようにしている。
 
-テンプレートのシンタックスはJinja2と大体同じで馴染みやすい。
+ZolaのテンプレートシンタックスはJinja2とほぼ同じで馴染みやすい。
 
 Blueskyに投稿するとこんな感じ。
 
-なお，デフォルトのカバー画像は[「検索システムー実務者のための開発改善ガイドブック」](https://www.lambdanote.com/products/ir-system)の表紙絵です。ペンギンかわいい。
+![](ogpimage.png)
+
+デフォルトのアイキャッチ画像は[「検索システムー実務者のための開発改善ガイドブック」](https://www.lambdanote.com/products/ir-system)の表紙絵です。🐧
 
