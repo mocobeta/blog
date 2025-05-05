@@ -1,5 +1,5 @@
 +++
-title = "ZolaのブログポストにOGPメタタグをつける"
+title = "ZolaのブログテンプレートにOGPメタタグをつける"
 date = "2025-05-05"
 
 [taxonomies]
@@ -34,7 +34,13 @@ Zolaテーマのカスタマイズ方法は，[Customizing a theme](https://www.
 {% endif %}
 ```
 
-`og:image` は，ブログポスト内にカバーイメージがある場合はそれを使い，なければデフォルトの画像（[「検索システムー実務者のための開発改善ガイドブック」](https://www.lambdanote.com/products/ir-system)の表紙絵）にフォールバックするようにしている。
+[https://github.com/mocobeta/blog/blob/main/templates/post.html](https://github.com/mocobeta/blog/blob/main/templates/post.html)
+
+`og:image` は，ブログポスト内にカバーイメージがある場合はそれを使い，なければデフォルトの画像にフォールバックするようにしている。
 
 テンプレートのシンタックスはJinja2と大体同じで馴染みやすい。
+
+Blueskyに投稿するとこんな感じ。
+
+なお，デフォルトのカバー画像は[「検索システムー実務者のための開発改善ガイドブック」](https://www.lambdanote.com/products/ir-system)の表紙絵です。ペンギンかわいい。
 
