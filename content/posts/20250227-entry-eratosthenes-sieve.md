@@ -1,10 +1,11 @@
 +++
 title = "素数発見法エラトステネスの篩の最適化 with Claude 3.7"
 date = "2025-02-27"
+description = "最近，数学とプログラミングの練習のために，Project EulerをRustで解いている。正答したあとに見られる解説が丁寧なので，とりあえず思いつくナイーブな方法で解いあと，解説を読んで最適解を実装してみる，という感じでゆるゆると進めている。初級レベルの問題で素数を扱う問題が出てくるのだけど，よく知られていて実装が簡易な素数発見アルゴリズムエラトステネスの篩の最適化の解説を見つけて，面白かったので書き残しておく。"
 
 [taxonomies]
-categories = ["Short Posts"]
-tags = ["til", "algorithm", "claude"]
+categories = ["Long Posts"]
+tags = ["algorithm", "claude", "rust"]
 +++
 
 最近，数学とプログラミングの練習のために，[Project Euler](https://projecteuler.net/archives)をRustで解いている。正答したあとに見られる解説が丁寧なので，とりあえず思いつくナイーブな方法で解いあと，解説を読んで最適解を実装してみる，という感じでゆるゆると進めている。
@@ -21,6 +22,7 @@ tags = ["til", "algorithm", "claude"]
 
 テスト済みのRust実装は以下。素数列を生成したかったので，Iteratorとして作った。
 
+<!-- more -->
 コードを見ても何をしているのかわかりづらいと思うので，興味がある人はProject Eulerの[Problem 10](https://projecteuler.net/problem=10)を解いて解説を読んでほしい（解説自体の配布は禁止されているので注意）。
 
 ```rust

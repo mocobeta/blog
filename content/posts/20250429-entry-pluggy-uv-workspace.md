@@ -1,6 +1,7 @@
 +++
 title = "uv workspacesとpluggyで作る，プラッガブルなPythonエコシステム"
 date = "2025-04-29"
+description = "uv workspacesでスッキリ作るPythonモノレポでは，uv workspacesを使ったモノレポ構成について書いた。この記事はその続編で，モノレポにpluggyを組み合わせて，プラッガブルなPythonエコシステムを作っていく。"
 
 [taxonomies]
 categories = ["Long Posts"]
@@ -25,6 +26,7 @@ uv workspacesのcommon use caseとして，「プラグインシステム」が�
 
 この記事では，前回作ったモノレポにpluggyを導入して，CLIアプリケーションから拡張ライブラリへの依存を剥がし，ドロップイン方式で拡張ライブラリが実行できるようにしていく。
 
+<!-- more -->
 # toy projectのサンプルコード
 
 [https://github.com/mocobeta/uv-workspaces-eggdishes](https://github.com/mocobeta/uv-workspaces-eggdishes)

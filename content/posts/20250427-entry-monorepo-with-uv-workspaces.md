@@ -1,6 +1,7 @@
 +++
 title = "uv workspacesでスッキリ作るPythonモノレポ"
 date = "2025-04-27"
+description = ""
 
 [taxonomies]
 categories = ["Long Posts"]
@@ -21,6 +22,7 @@ uvには，[workspaces](https://docs.astral.sh/uv/concepts/projects/workspaces/)
 
 uvのworkspacesならRust(Cargo)のようにスッキリとモノレポ管理ができるのでは，と思って試したところ，いい感じにできそうだったので，少し詳細に手順と構成をまとめておく。
 
+<!-- more -->
 # 要件（実現したいこと）
 
 ひとくちにモノレポといっても，その定義は開発チームが実現したいことによってさまざま。この記事で私が実現したい主要な要件は以下の通り。
