@@ -1,18 +1,22 @@
 +++
-title = "embeddingのためのコマンドラインツールを作っている"
+title = "embeddingのためのOSSコマンドラインツールを作っている"
 date = "2025-05-18"
-description = ""
+description = "毎週のように新しいモデルが発表されるLLMほどではないが，embedding model（埋め込み表現モデル）にもたくさんのモデルがある。埋め込み表現と，そのメジャーなアプリケーションであるベクトル検索の勉強がてら，いろいろなembeddingを手軽に試せるembcliというOSSを作っている。"
 
 [taxonomies]
 categories = ["Long Posts"]
 tags = ["embcli", "python", "oss", "embedding"]
 +++
 
-毎週のように新しいモデルが発表されるLLMほどではないが，embedding model（埋め込み表現モデル）にもたくさんのモデルがある。勉強がてら，いろいろなembeddingを手軽に試せるコマンドラインツールが欲しいなと思って，[embcli - CLI for Embeddings](https://github.com/mocobeta/embcli)というOSS（ALv2ライセンス）で作っている。
+毎週のように新しいモデルが発表されるLLMほどではないが，embedding model（埋め込み表現モデル）にもたくさんのモデルがある。埋め込み表現と，そのメジャーなアプリケーションであるベクトル検索の勉強がてら，いろいろなembeddingを手軽に試せる`embcli`というOSSを作っている。
 
-さまざまなLLMをコマンドラインから呼べる[llm](https://github.com/simonw/llm)というCLIツールにインスパイアされたツールで，そのembedding版のようなもの。なお`llm`も[embeddingsをサポートしている](https://llm.datasette.io/en/stable/embeddings/index.html)のだけれど，embedding modelのサポートはLLMほどには厚くなく，embeddingに特化したCLIがあっても良いかなと思ったのがきっかけ。
+GitHub: [embcli - CLI for Embeddings](https://github.com/mocobeta/embcli)
 
-まだまだWIPなものの，一通りのベースらしきものができたところでPyPIに初期バージョンを登録したので，その紹介を書く。
+ライセンス: Apache License v2
+
+設計思想や使い勝手は，さまざまなLLMをコマンドラインから呼べる[llm](https://github.com/simonw/llm)というツールにインスパイアされていて，ざっくりそのembedding版を目指している。なお[llmもembeddingsをサポートしていて](https://llm.datasette.io/en/stable/embeddings/index.html)，とはいえembedding modelのサポートはLLMよりは薄いので，embeddingの取扱いに特化したニッチツールがあっても良いかな...と思ったのがきっかけ。
+
+ソフトウェアとしてはまだ粗々なものの，一通りのベースらしきものができたところでPyPIに初期バージョンを登録したので，紹介エントリを書く。
 
 # インストールと使い方
 
@@ -129,7 +133,7 @@ Score: 0.05821842435995467, Document ID: 10, Text: ティラミス（イタリ�
 
 など。
 
-勉強のためという漠としたイメージで作り始めたツールですが，面白そう・便利かもと思った方はお好みのモデルのパッケージをインストールしてみてください。ドキュメンテーションがTODOとなっていますが（汗），READMEとコマンド付属のヘルプで大体の使い方はすぐに掴めると思います。[GitHub Issues](https://github.com/mocobeta/embcli/issues)でもフィードバック・リクエストを受け付けています。
+勉強のためという漠としたイメージで始めたOSSプロジェクトですが，面白そう・便利かもと思った方はお好みのモデルのパッケージをインストールしてみてください。ドキュメンテーションがTODOとなっていますが（汗），READMEとコマンド付属のヘルプで大体の使い方はすぐに掴めると思います。[GitHub Issues](https://github.com/mocobeta/embcli/issues)でもフィードバック・リクエストを受け付けています。
 
 # おまけ：設計ポリシーなど
 
