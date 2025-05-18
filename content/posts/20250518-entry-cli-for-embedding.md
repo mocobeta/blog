@@ -1,14 +1,14 @@
 +++
 title = "embeddingのためのOSSコマンドラインツールを作っている"
 date = "2025-05-18"
-description = "毎週のように新しいモデルが発表されるLLMほどではないが，embedding model（埋め込み表現モデル）にもたくさんのモデルがある。埋め込み表現と，そのメジャーなアプリケーションであるベクトル検索の勉強がてら，いろいろなembeddingを手軽に試せるembcliというOSSを作っている。"
+description = "毎週のように新しいモデルが発表されるLLMほどではないが，embedding model（埋め込み表現モデル）にもたくさんのモデルがある。埋め込み表現と，そのメジャーなアプリケーションであるベクトル検索のリサーチがてら，いろいろなembeddingを手軽に試せるembcliというOSSを作っている。"
 
 [taxonomies]
 categories = ["Long Posts"]
 tags = ["embcli", "python", "oss", "embedding"]
 +++
 
-毎週のように新しいモデルが発表されるLLMほどではないが，embedding model（埋め込み表現モデル）にもたくさんのモデルがある。埋め込み表現と，そのメジャーなアプリケーションであるベクトル検索の勉強がてら，いろいろなembeddingを手軽に試せる`embcli`というOSSを作っている。
+毎週のように新しいモデルが発表されるLLMほどではないが，embedding model（埋め込み表現モデル）にもたくさんのモデルがある。埋め込み表現と，そのメジャーなアプリケーションであるベクトル検索のリサーチがてら，いろいろなembeddingを手軽に試せる`embcli`というOSSを作っている。
 
 GitHub: [embcli - CLI for Embeddings](https://github.com/mocobeta/embcli)
 
@@ -127,6 +127,7 @@ Score: 0.05821842435995467, Document ID: 10, Text: ティラミス（イタリ�
 - ドキュメンテーション
 - ローカルモデルのサポート拡充（特にllama.cpp/GGUF）
 - CLIPなどマルチモーダルモデルのサポート
+- Quantizationのサポート（int8, binary, など）
 - サポートしているモデルのドキュメンテーションや原著論文を読んで解説を書く
 - ベクトル検索以外のダウンストリームタスク（クラスタリング，文書分類，他）のサポート
 - ベクトル検索で使う各種ベクトルデータベースのサポート
