@@ -1,4 +1,11 @@
 [[project]]
+name = "embcli"
+desc = "Command-line utility tool for manipulating embeddings"
+tags = ["python", "cli", "search", "embeddings"]
+# img = ""
+links = [{ name = "github", url = "https://github.com/mocobeta/embcli" }]
+
+[[project]]
 name = "Janome"
 desc = "Japanese tokenizer library written entirely in Python"
 tags = ["python", "nlp"]
