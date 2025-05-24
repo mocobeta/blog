@@ -3,7 +3,10 @@ name = "embcli"
 desc = "Command-line utility tool for manipulating embeddings"
 tags = ["python", "cli", "search", "embeddings"]
 # img = ""
-links = [{ name = "github", url = "https://github.com/mocobeta/embcli" }]
+links = [
+  { name = "website", url = "https://embcli.mocobeta.dev/" },
+  { name = "github", url = "https://github.com/mocobeta/embcli" },
+]
 
 [[project]]
 name = "Janome"
