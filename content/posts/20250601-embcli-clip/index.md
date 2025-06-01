@@ -141,3 +141,9 @@ Score: 0.0268596218357381, Document ID: 75, Text: Beef Stroganoff (Russia): Saut
 
 - [embcli Multimodal Usage](https://embcli.mocobeta.dev/#multimodal_usage/)
 - [embcli-clip for CLIP Models](https://embcli.mocobeta.dev/#multimodal_model_plugins/#embcli-clip-for-clip-models)
+
+## (追記) その他のマルチモーダルモデル
+
+[embcli-jina](https://pypi.org/project/embcli-jina/) 0.1.1で，[Jina CLIP v2](https://jina.ai/news/jina-clip-v2-multilingual-multimodal-embeddings-for-text-and-images/#matryoshka-representation-performance)をサポートしました。また，[embcli-voyage](https://pypi.org/project/embcli-voyage/) 0.1.1で，VoyageAIの[Multimodal Embeddings](https://docs.voyageai.com/docs/multimodal-embeddings)をサポートしました。
+
+使い方はCLIPと同じです。
