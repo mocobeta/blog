@@ -1,7 +1,7 @@
 [[project]]
 name = "embcli"
-desc = "Command-line utility tool for manipulating embeddings"
-tags = ["python", "cli", "search", "embeddings"]
+desc = "Command-line utility tool for embeddings"
+tags = ["python", "cli", "nlp"]
 # img = ""
 links = [
   { name = "website", url = "https://embcli.mocobeta.dev/" },
