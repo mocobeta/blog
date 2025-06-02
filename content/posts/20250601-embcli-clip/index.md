@@ -48,7 +48,7 @@ desc.txt
 A ginger cat with bright green eyes, lazily stretching out on a sun-drenched windowsill.
 ```
 
-というテキストと，`gingercat.jpeg`の類似度を計算してみます。（正しくは，テキストをCLIPモデルでエンコードして得られるembeddingと画像をCLIPモデルでエンコードして得られるembeddingのコサイン距離を測っているのですが，長いので「テキストと画像の類似度」と表現してます。）
+というテキストと，`gingercat.jpeg`の類似度を計算してみます。（正しくは，テキストをCLIPモデルでエンコードして得られるembeddingと画像をCLIPモデルでエンコードして得られるembeddingのコサイン類似度を測っているのですが，長いので「テキストと画像の類似度」と表現してます。）
 
 ```bash
 emb simscore -m clip -f1 desc.txt --image2 gingercat.jpeg 
@@ -61,7 +61,7 @@ blackcat.jpeg
 
 ![blackcat.jpeg](blackcat.jpeg)
 
-との距離は
+との類似度は
 
 ```bash
 emb simscore -m clip -f1 desc.txt --image2 blackcat.jpeg 
@@ -72,7 +72,7 @@ orangehouse.jpeg
 
 ![orangehouse.jpeg](orangehouse.jpeg)
 
-との距離は
+との類似度は
 
 ```bash
 emb simscore -m clip -f1 desc.txt --image2 orangehouse.jpeg 
@@ -83,7 +83,7 @@ purplerose.jpeg
 
 ![purplerose.jpeg](purplerose.jpeg)
 
-との距離は
+との類似度は
 
 ```bash
 emb simscore -m clip -f1 desc.txt --image2 purplerose.jpeg 
@@ -94,7 +94,7 @@ emb simscore -m clip -f1 desc.txt --image2 purplerose.jpeg
 
 ### 画像をクエリにしてコーパスを検索する
 
-テキストと画像が同じ空間上に埋め込まれるので，「画像をクエリとしてテキストを検索する」ことができます。
+テキストと画像が同じベクトル空間上に埋め込まれるので，「画像をクエリとしてテキストを検索する」ことができます。
 
 まず，embcliに付属しているサンプルコーパス[dishes-en](https://github.com/mocobeta/embcli/blob/main/packages/embcli-core/src/embcli_core/synth_data/dishes-en.csv)をCLIPでエンコードしてベクトルデータベースにインデックスします。
 
