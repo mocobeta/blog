@@ -22,8 +22,8 @@ LanceDBは，アプリケーションエンベッドもしくはサーバーレ�
 
 - マルチモーダルembeddingをネイティブサポート
 - embedding検索と全文検索とのハイブリッド検索
-- マルチベクトル検索
-- Reranker (Cross EncoderやColBERTなど)
+- Late interaction (ColBERT) のサポート
+- Rerankerのサポート
 - 列指向データベースでもあって，SQLがサポートするようなフィルタリングはだいたいできる
 - Pandas, DuckDB，Datafusion, LangChain, LlamaIndex などML/Data/AIエコシステムとの連携が豊富
 - etc.
