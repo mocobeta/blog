@@ -132,8 +132,15 @@ GitHubだとこう見えて，わかりやすいんです↓
 
 # 感想
 
-現時点でのClaude Codeに対する私の印象は，こんな感じです（与太話２）。元ネタ知らない方はすみません。
+2025年7月時点でのClaude Codeに対する私の印象は，こんな感じです（与太話２）。元ネタ知らない方はすみません。
 
 ![](./mukagen_peaky.jpg)
 
 残念ながらわたしは六眼もちではないので，すさまじいパワーをもつコーディングエージェントを使いこなして，信頼できるプログラムを生むためには，精進するしかないなと思った次第。
+
+# リファレンス
+
+- [Claude Code概要](https://docs.anthropic.com/ja/docs/claude-code/overview)
+- [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices)
+- [Claude Code を初めて使う人向けの実践ガイド](https://zenn.dev/hokuto_tech/articles/86d1edb33da61a)
+- [Claude CodeでPlanモードを使う方法](https://note.com/buchi_gadget/n/nb16889c7da98)
