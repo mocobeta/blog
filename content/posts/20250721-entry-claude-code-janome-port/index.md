@@ -8,7 +8,7 @@ categories = ["Long Posts"]
 tags = ["Claude Code", "Janome", "Python", "Rust"]
 
 [extra]
-cover = "mukagen_peaky.jpg"
+cover = "github_coauthor.jpg"
 +++
 
 Claude Codeの練習のため，ある程度実践的，かつ手頃な規模のプロジェクトとして，[Janome](https://github.com/mocobeta/janome)をRustで書き直す＆PythonバインディングでJanome互換のAPIを実装する，ということをやってみました。結論から言うと，失敗に終わった（後述）のですが，振り返りと供養を兼ねて，ひとつの奮闘の記録を残しておこうと思います。
@@ -44,7 +44,7 @@ Claude Codeの練習のため，ある程度実践的，かつ手頃な規模の
    - [planning/ram_dictionary_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/ram_dictionary_implementation_plan.md)
    - [planning/system_dictionary_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/system_dictionary_implementation_plan.md)
    - [planning/lattice_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/lattice_implementation_plan.md)
-   - [https://github.com/mocobeta/runome/blob/main/planning/tokenizer_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/tokenizer_implementation_plan.md)
+   - [planning/tokenizer_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/tokenizer_implementation_plan.md)
    - [planning/user_dictionary_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/user_dictionary_implementation_plan.md)
    - [planning/charfilter_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/charfilter_implementation_plan.md)
    - [planning/tokenfilter_implementation_plan.md](https://github.com/mocobeta/runome/blob/main/planning/tokenfilter_implementation_plan.md)
@@ -135,6 +135,8 @@ GitHubだとこう見えて，わかりやすいんです↓
 2025年7月時点でのClaude Codeに対する私の印象は，こんな感じです（与太話２）。元ネタ知らない方はすみません。
 
 ![](./mukagen_peaky.jpg)
+
+[呪術廻戦](https://www.shonenjump.com/j/rensai/jujutsu.html) 262話
 
 残念ながらわたしは六眼もちではないので，すさまじいパワーをもつコーディングエージェントを使いこなして，信頼できるプログラムを生むためには，精進するしかないなと思った次第。
 
