@@ -114,7 +114,7 @@ Claude Codeと対話したり，Design Docを書かせたりしていると，�
 
 こういった「コンテキストを完璧に理解しているように見えてやっぱり理解していない」というもやもやを，どう端的に表現したらいいのか考えていて，こんなことをつぶやいてました（与太話１）。
 
-https://bsky.app/profile/mocobeta.dev/post/3ltz5mklgnc2u
+[https://bsky.app/profile/mocobeta.dev/post/3ltz5mklgnc2u](https://bsky.app/profile/mocobeta.dev/post/3ltz5mklgnc2u)
 
 ![](./bluesky_tweet.png)
 
