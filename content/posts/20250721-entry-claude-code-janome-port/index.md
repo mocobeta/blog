@@ -8,7 +8,7 @@ categories = ["Long Posts"]
 tags = ["Claude Code", "Janome", "Python", "Rust"]
 
 [extra]
-cover = "github_coauthor.jpg"
+cover = "github_coauthor.png"
 +++
 
 Claude Codeの練習のため，ある程度実践的，かつ手頃な規模のプロジェクトとして，[Janome](https://github.com/mocobeta/janome)をRustで書き直す＆PythonバインディングでJanome互換のAPIを実装する，ということをやってみました。結論から言うと，失敗に終わった（後述）のですが，振り返りと供養を兼ねて，ひとつの奮闘の記録を残しておこうと思います。
@@ -132,7 +132,7 @@ GitHubだとこう見えて，わかりやすいんです↓
 
 # 感想
 
-2025年7月時点でのClaude Codeに対する私の印象は，こんな感じです（与太話２）。元ネタ知らない方はすみません。
+2025年7月時点でのClaude Codeに対する私の印象は，こんな感じです（与太話２）。
 
 ![](./mukagen_peaky.jpg)
 
