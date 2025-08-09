@@ -4,7 +4,7 @@ date = "2025-08-08"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["lancedb", "search", "embedding"]
+tags = ["lancedb", "search", "embedding", "python"]
 +++
 
 [LanceDB](https://lancedb.github.io/lancedb/)の[Python SDK](https://lancedb.github.io/lancedb/python/python/)を使って，全文検索，ベクトル検索，ハイブリッド検索を試します。
@@ -59,10 +59,10 @@ table.create_fts_index("movie")
 
 ## (オプショナル) ANNインデックスを作成
 
-`Table.create_index`メソッドで，近似最近傍検索用のインデックスを作成します。ドキュメント数が少ない（256件未満）とエラーになるので，ここではコメントアウト。
+`Table.create_index`メソッドで，近似最近傍検索用のインデックスを作成します。`index_type`に`IVF_FLAT`を指定するとInverted File Flatインデックスが作成されます。ここでは，ドキュメント数が少ないのでコメントアウト。
 
 ```python
-#table.create_index(metric="cosine", vector_column_name="vector", index_type="IVF_PQ")
+#table.create_index(metric="cosine", vector_column_name="vector", index_type="IVF_FLAT")
 ```
 
 ## 検索する
