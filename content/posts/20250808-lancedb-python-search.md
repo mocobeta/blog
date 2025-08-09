@@ -80,7 +80,7 @@ for result in fts_results:
     print(result.movie)
 ```
 
-```bash
+```plaintext
 Full-text search results:
 Parasite is Bong Joon-ho's satirical thriller that made history at the Academy Awards.
 ```
@@ -98,7 +98,7 @@ for result in vector_results:
     print(result.movie)
 ```
 
-```bash
+```plaintext
 Vector search results:
 Schindler's List is Steven Spielberg's poignant and powerful historical drama about the Holocaust.
 Parasite is Bong Joon-ho's satirical thriller that made history at the Academy Awards.
@@ -118,7 +118,7 @@ for result in hybrid_results:
     print(result.movie)
 ```
 
-```bash
+```plaintext
 Hybrid search results:
 Parasite is Bong Joon-ho's satirical thriller that made history at the Academy Awards.
 Schindler's List is Steven Spielberg's poignant and powerful historical drama about the Holocaust.
