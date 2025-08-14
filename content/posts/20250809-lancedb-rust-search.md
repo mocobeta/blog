@@ -138,7 +138,7 @@ async fn main() -> Result<()> {
     }
 ```
 
-```plaintext
+```
 Full-text search results:
 Parasite is Bong Joon-ho's satirical thriller that made history at the Academy Awards.
 ```
@@ -176,7 +176,7 @@ Parasite is Bong Joon-ho's satirical thriller that made history at the Academy A
     }
 ```
 
-```plaintext
+```
 Vector search results:
 Casablanca is a timeless romantic drama known for its iconic lines and performances.
 The Dark Knight, directed by Christopher Nolan, is hailed for its dark themes and iconic villain.
@@ -215,7 +215,7 @@ Parasite is Bong Joon-ho's satirical thriller that made history at the Academy A
     }
 ```
 
-```plaintext
+```
 Hybrid search results:
 Parasite is Bong Joon-ho's satirical thriller that made history at the Academy Awards.
 Casablanca is a timeless romantic drama known for its iconic lines and performances.
