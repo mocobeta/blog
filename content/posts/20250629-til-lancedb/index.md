@@ -4,7 +4,7 @@ date = "2025-06-29"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "lancedb", "RAG", "emedding"]
+tags = ["til", "LanceDB", "RAG", "emedding"]
 
 [extra]
 cover = "lancedb_and_lance.png"
