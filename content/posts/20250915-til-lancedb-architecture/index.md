@@ -31,7 +31,7 @@ cover = "lancedb-class-diagram.png"
 
 ## 関連プロジェクト
 
-LanceDBは自体は，以下のコア処理を行うライブラリのファサードとして機能します。
+LanceDB自体は，以下のコア処理を行うライブラリのファサードとして機能します。
 そのため，LanceDBのコードベース自体はそれほど大きくないですが，深く理解するにはこれらもまとめて理解する必要があり，先は長そう。
 
 ### [Lance](https://github.com/lancedb/lance)
