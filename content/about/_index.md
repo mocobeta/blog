@@ -15,9 +15,9 @@ reaction = false
 
 Hello, I'm Tomoko Uchida (打田智子), a.k.a mocobeta. (she/her)
 
-I am a programmer, search engineer, and technical book author. I'm passionate about coding and building search and AI software. I also love engaging in open source projects.
+I am a programmer, search engineer, and technical book author. I'm passionate about building search (engines) and AI software, and engaging in open source projects.
 
-My favorite programming languages are Rust, Python, and Java. For the desktop environment, I like Arch Linux, i3 window manager, and kitty terminal emulator.
+My favorite programming languages are Rust, Python, and Java. I like Arch Linux as my development environment.
 
 ## OSS Products and Publications
 

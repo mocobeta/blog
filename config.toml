@@ -43,7 +43,7 @@ anchors = "on"
 
 name = "Keep Coding"
 id = "mocobeta"
-bio = "software engineer who loves search and coding"
+bio = "software engineer who loves search (engines) and coding"
 avatar = "img/avatar.webp"
 
 display_id = true
@@ -64,7 +64,7 @@ blog_section_path = "/posts"
 links = [
     { name = "GitHub", icon = "github", url = "https://github.com/mocobeta" },
     { name = "Bluesky", icon = "bluesky", url = "https://bsky.app/profile/mocobeta.dev" },
-    { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/tomoko-uchida-643195249/" },
+    { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/tomoko-u-643195249/" },
     { name = "Email", icon = "email", url = "mailto:contact@mocobeta.dev" },
 ]
 
