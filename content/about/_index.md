@@ -33,7 +33,7 @@ Listed in [projects](/projects)
 
 You can find me on:
 
-LinkedIn [Tomoko Uchida](https://www.linkedin.com/in/tomoko-uchida-643195249/)
+LinkedIn [Tomoko Uchida](https://www.linkedin.com/in/tomoko-u-643195249/)
 
 GitHub [@mocobeta](https://github.com/mocobeta)
 
