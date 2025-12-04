@@ -60,7 +60,6 @@ agent = Agent(
 )
 
 class MyChatKitServer(ChatKitServer[dict[str, Any]]):
-    """ChatKit server wired up with the virtual cat caretaker."""
 
     def __init__(self) -> None:
         self.store: MemoryStore = MemoryStore()
