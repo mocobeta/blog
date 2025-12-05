@@ -5,6 +5,9 @@ date = "2025-12-05"
 [taxonomies]
 categories = ["Short Posts"]
 tags = ["til", "agents", "openai"]
+
+[extra]
+cover = "cookies1.jpg"
 +++
 
 最近のLLMはマルチモーダルが当たり前になりつつありますが，Agents SDK（というよりは，その裏側のResponses API）もファイルを入力として受け取ることができます。
