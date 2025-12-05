@@ -32,7 +32,7 @@ AgentKitはそれ自体が具体的なツールというわけではなく，[�
 
 OpenAI のフレームワークなので，少なくとも現時点では，「LLM」はOpenAIのモデルに限定されます。また，Agents SDKはResponses APIを抽象化したラッパーであるため，LLMのI/FとしてはResponses APIが前提となります。そのためResponses APIのリファレンスも併せて参照すると捗ります。というよりは，Responses APIを知らないとHello World以上のことはできないため，嫌でも詳しくなれます。
 
-[2025/12/05追記]
+### 2025/12/05追記
 
 [LiteLLM](https://docs.litellm.ai/docs/) を介して，OpenAI以外のモデルを使うことができる，とご指摘をいただきました。ありがとうございます。
 
