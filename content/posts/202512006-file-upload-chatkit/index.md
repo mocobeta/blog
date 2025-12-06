@@ -65,7 +65,7 @@ const chatkit = useChatKit({
 1. AttachmentStoreの実装
 2. Storeの実装
 2. アップロードエンドポイントの実装
-3. AttachmentConverterの実装
+3. ThreadItemConverterの実装
 
 の4つです。
 
