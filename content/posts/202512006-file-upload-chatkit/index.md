@@ -75,7 +75,7 @@ const chatkit = useChatKit({
 
 [`AttachmentStore`](https://openai.github.io/chatkit-python/api/chatkit/store/) を継承したクラスを作ります。`AttachmentStore`は添付ファイルのコンテンツを扱うクラスです。
 
-以下はOpenAI Filesにファイルコンテンツをアップロードする例ですが，ストレージはもちろんローカルストレージでもS3のようなファイルストレージでも何でもOKです。
+以下はOpenAI Filesにファイルコンテンツをアップロードする例ですが，ストレージはもちろんローカルストレージでもS3のようなオブジェクトストレージでも何でもOKです。
 
 ```python
 # file_attachment_store.py
