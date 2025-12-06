@@ -229,7 +229,7 @@ export OPENAI_API_KEY="sk-..."
 python -m uvicorn app.main:app --reload --port 8000
 ```
 
-ファイルをアップロードしたところ
+ファイルをアップロードしたところ。
 
 ![chatkit_file_upload_success](./chatkit_file_upload_success.png)
 
@@ -242,7 +242,7 @@ INFO:app.main:Saved attachment metadata for file cookies2.jpg with id file-RPgCt
 INFO:     127.0.0.1:41542 - "POST /chatkit/upload HTTP/1.1" 200 OK
 ```
 
-画像の右上に小さく出ている「✘」を押すと削除される
+画像の右上に小さく出ている「✘」を押すと削除されます。
 
 ファイル削除成功時のサーバーのログ
 
