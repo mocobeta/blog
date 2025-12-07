@@ -109,7 +109,21 @@ cookies2.jpg
 ![chatkit_response.png](./chatkit_response.png)
 
 
-モデルは`gpt-5`を使っています。1枚目の画像は簡単そうですが，どう見ても15枚なので数え間違いをしている。2枚目も間違っていると思う（7枚か9枚ならわかる）けど，これはなんで8枚と認識したんだろう？最新のモデルでも，画像と計算を組み合わせたタスクは簡単ではないようです。
+モデルは`gpt-5`を使っています。1枚目の画像は簡単そうですが，どう見ても15枚なので数え間違いをしている。2枚目も間違っていると思う（7枚か9枚ならわかる）けど，これはなんで8枚と認識したんだろう？
+
+↑これはLLMの性能問題ではなくて，画像の与え方の問題でした。ResponseInputImageParamの`detail`パラメータを`auto`から`high`に変更すると，よりトークンを消費して，高い解像度の画像がLLMに渡されます。参考： [input detail level](https://platform.openai.com/docs/guides/images-vision?api-mode=responses&format=file#specify-image-input-detail-level)
+
+```python
+return ResponseInputImageParam(
+    type="input_image",
+    file_id=attachment.id,  # OpenAI FilesのファイルID
+    detail="high",  # "high"だと画像認識精度が上がる
+)
+```
+
+![chatkit_response2.png](./chatkit_response2.png)
+
+ただしい画像認識ができました。
 
 ----
 
