@@ -100,11 +100,14 @@ class FileAttachmentStore(AttachmentStore[dict[str, Any]]):
         except NotFoundError:
             pass
     
-    async def upload_to_openai(self, data: BinaryIO) -> FileObject:
+    async def upload_to_openai(self, data: BinaryIO, filename: str, content_type: str) -> FileObject:
         """OpenAI Filesにファイルをアップロードする"""
         try:
             response = await self._openai_client.files.create(
-                file=data,
+                # fileパラメータにはdataだけでなくfilename, data, content_typeの３つ組を渡す
+                # Responses APIで使うために，content typeを必ず指定しておく
+                # content typeを指定しておかないと，Responses APIでエラーになる
+                file=(filename, data, content_type),
                 purpose="user_data",
             )
             file_id = response.id
@@ -183,7 +186,7 @@ async def upload_file(request: Request):
 
     # ファイルコンテンツを保存（ここではOpenAI Filesにアップロード）
     try:
-        response = await attachment_store.upload_to_openai(file.file)
+        response = await attachment_store.upload_to_openai(file.file, file.filename or "untitled", file.content_type)
         file_id = response.id
     except Exception as e:
         raise HTTPException(
