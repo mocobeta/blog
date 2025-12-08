@@ -26,7 +26,7 @@ ChatKitを使いこなすには，この`Thread`のデータ構造と，また`T
 
 また，これらを保存・管理するリポジトリに相当するクラスが`Store`です。
 
-`Attachment` が `ThreadMetadata` とが関連づけられていないように見えますが，実際直接は関連づけられていなくて，`ThreadMetadata`の中のひとつの`ThreadItem`を介して関連づける形になっています。認識が間違っていなければ，[昨日のエントリ](https://blog.mocobeta.dev/posts/20251206-file-upload-chatkit/)で触れた`AttachmentConverter`が，`Attachment`から新しい`ThreadItem`を作るという処理をしている，はず。
+`Attachment` が `ThreadMetadata` とが関連づけられていないように見えますが，実際直接は関連づけられていなくて，`ThreadMetadata`の中のひとつの`ThreadItem`を介して関連づける形になっています。認識が間違っていなければ，[昨日のエントリ](https://blog.mocobeta.dev/posts/20251207-file-attachment-chatkit/)で触れた`AttachmentConverter`が，`Attachment`から新しい`ThreadItem`を作るという処理をしている，はず。
 
 ## `Thread`の永続化について
 
