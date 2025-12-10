@@ -19,11 +19,10 @@ Response APIのログ
 
 ![logs-detail](./openai_logs_responses_detail.png)
 
-画面右上の「Optimize」を押すと，LLMでプロンプト改善の提案をもらうこともできます。
 
 商用環境においては機密情報に十分注意が必要ですが，ダッシュボードUIからログがさっと一覧できるのは助かる。ユーザーインプットはテキストのみで，アップロードしたファイルの中身までは見られないようです。
 
-AIエージェントの開発・デバッグの観点では，[handsoff](https://openai.github.io/openai-agents-python/handoffs/)等のエージェントの取ったアクションを階層的に表示してくれるLogs > Tracesが特に便利そうです。Tracesはまだあまり使えていないので，別の機会に調べたい。
+AIエージェントの開発・デバッグの観点では，[handoffs](https://openai.github.io/openai-agents-python/handoffs/)等のエージェントの取ったアクションを階層的に表示してくれるLogs > Tracesが特に便利そうです。Tracesはまだあまり使えていないので，別の機会に調べたい。
 
 ----
 
