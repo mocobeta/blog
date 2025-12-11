@@ -7,7 +7,7 @@ categories = ["Short Posts"]
 tags = ["til", "agents", "openai"]
 +++
 
-Agents SDKは，複数のエージェントを組み合わせてタスクを処理する，オーケストレーションの仕組みを強力にサポートしています。
+Agents SDKは，複数のエージェントを組み合わせるオーケストレーションの仕組みを強力にサポートしています。
 
 [Orchestrating multiple agents](https://openai.github.io/openai-agents-python/multi_agent/)
 
