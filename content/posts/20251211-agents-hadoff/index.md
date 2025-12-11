@@ -7,11 +7,11 @@ categories = ["Short Posts"]
 tags = ["til", "agents", "openai"]
 +++
 
-Agents SDKは，複数のエージェントを組み合わせてタスクを処理する，オーケストレーションの仕組みをサポートしています。
+Agents SDKは，複数のエージェントを組み合わせてタスクを処理する，オーケストレーションの仕組みを強力にサポートしています。
 
 [Orchestrating multiple agents](https://openai.github.io/openai-agents-python/multi_agent/)
 
-オーケストレーション方式にはいくつかのパターンがありますが，そのうちの一つ，[Handoffs](https://openai.github.io/openai-agents-python/handoffs/)パターンは，ディスパッチャーとなるトリアージエージェントが，ユーザーから受け取ったタスクを解析して，いずれかのサブエージェントにタスクを引き継ぎます。
+オーケストレーション方式にはさまざまなパターンがありますが，そのうちの一つ，[Handoffs](https://openai.github.io/openai-agents-python/handoffs/)パターンは，ディスパッチャーとなるトリアージエージェントが，ユーザーから受け取ったタスクを解析して，いずれかのサブエージェントにタスクを引き継ぎます。
 
 ## Handoffsの例
 
