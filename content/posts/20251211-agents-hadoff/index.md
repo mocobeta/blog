@@ -1,5 +1,5 @@
 +++
-title = "エージェントオーケストレーションパターン - Handoffs"
+title = "Agents SDKのエージェントオーケストレーションパターン - Handoffs"
 date = "2025-12-11"
 
 [taxonomies]
