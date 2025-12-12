@@ -7,7 +7,7 @@ categories = ["Short Posts"]
 tags = ["til", "agents", "openai"]
 +++
 
-[昨日のエントリ](https://blog.mocobeta.dev/posts/20251211-agents-hadoff/)で，ひとつ大きく勘違いをしていた点があったので，改めてHandoffsパターンについて書きます。
+[昨日のエントリ](https://blog.mocobeta.dev/posts/20251211-agents-handoff/)で，ひとつ大きく勘違いをしていた点があったので，改めてHandoffsパターンについて書きます。
 
 ## Handoffsとは（再掲）
 
