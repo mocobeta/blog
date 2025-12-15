@@ -21,6 +21,8 @@ print("Output tokens:", usage.output_tokens)
 print("Total tokens:", usage.total_tokens)
 ```
 
+## エージェントのトークン使用量を構造化ログで記録する
+
 `result.context_wrapper.usage` の中身は [`RequestUsage`](https://openai.github.io/openai-agents-python/ref/usage/) というdataclassになっています。これをたとえば[`structlog`](https://www.structlog.org/en/stable/)でJSON化してさくっとログに流しておくと，後でログ分析やモニタリングツールを使って使用状況の確認や監視がしやすそうです。
 
 ```python
@@ -144,7 +146,7 @@ $ uv run python ./15-usage-log.py
 }
 ```
 
-エージェントの出力とログが混在していて見づらいですが，1度のエージェント実行ごとにJSONフォーマットのログが出力されて， `usage` プロパティに詳細なトークン使用量が記録されているのがわかります。（なお，この例では`input_tokens` には以前の会話のコンテキストがすべて含まれるので，会話が続くと増えていきます。）
+エージェントの出力とログが混在していて見づらいですが，1度のエージェント実行ごとにJSONフォーマットのログが出力されて， `usage` プロパティに詳細なトークン使用量が記録されているのがわかります。（この例ではinputには以前の会話のコンテキストがすべて含まれるので，`input_tokens`は会話が続くと増え続けます。）
 
 ----
 
