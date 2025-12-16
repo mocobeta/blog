@@ -47,7 +47,7 @@ spoiler_guardrail_agent = Agent(
 )
 
 # ガードレール関数
-# run_in_parallel=True により、メインエージェントの実行と並行してガードレールが実行される（デフォルト）
+# run_in_parallel=True により、メインエージェントの実行と並列してガードレールが実行される（デフォルト）
 @input_guardrail(run_in_parallel=True)
 async def spoiler_guardrail(
     context: RunContextWrapper[None],
