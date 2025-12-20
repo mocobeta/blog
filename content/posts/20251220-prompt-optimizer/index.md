@@ -17,7 +17,11 @@ cover = "evals_dashboard_2.png"
 
 Prompt optimizerを使うには，最低3つのrow（評価ケース）と，各rowにつき1つ以上の評価カラムが必要です（評価ケース，評価カラムについては[昨日のエントリ](https://blog.mocobeta.dev/posts/20251219-hello-evals/)で触れました）。
 
-Prompt optimizerは評価データ（アノテーターが付与したアノテーション，フィードバック，Graderによる評価）を総合して，なんらかのLLMマジックでシステムプロンプトを改善します。
+Prompt optimizerは，アノテーターが付与したアノテーション，フィードバック，Graderによる評価を総合して，なんらかのLLMマジックを実行してシステムプロンプトを改善します。とはいえ魔法の杖ではないので，Prompt optimizerのアウトプットの質は，付与したアノテーションやGraderの質に依存します（それはそう）。
+
+> The effectiveness of prompt optimization depends on the quality of your graders. We recommend building narrowly-defined graders for each of the desired output properties where you see your prompt failing.
+
+-- [Optimize your prompt](https://platform.openai.com/docs/guides/prompt-optimizer#optimize-your-prompt) より引用
 
 ## Prompt optimizerを実行する
 
