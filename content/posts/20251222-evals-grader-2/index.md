@@ -7,7 +7,7 @@ categories = ["Short Posts"]
 tags = ["til", "evals", "openai"]
 
 [extra]
-cover = "text_similarity_grader.png"
+cover = "score_grader_result.png"
 +++
 
 [昨日のエントリ](https://blog.mocobeta.dev/posts/20251221-evals-grader/)の続きで，Evalsで使えるGrader（評価器）のうち，LLMベースのScore Model Graderを試してみたメモです。柔軟な設定ができ，おそらく最も利用シーンが多いGraderかなと思います。
