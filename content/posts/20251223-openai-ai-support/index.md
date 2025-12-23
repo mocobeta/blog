@@ -49,6 +49,6 @@ Dataset ID: dset_XXXXXX
 
 ----
 
-これは [Agents SDK+αのTipsを一人で書いていくアドカレ Advent Calendar 2025](https://adventar.org/calendars/12523)の23日目の記事です。テーマと全然関係ない話になってしまいましたが。
+これは [Agents SDK+αのTipsを一人で書いていくアドカレ Advent Calendar 2025](https://adventar.org/calendars/12523)の23日目の記事です。テーマと全然関係ない話になってしまいました。
 
 
