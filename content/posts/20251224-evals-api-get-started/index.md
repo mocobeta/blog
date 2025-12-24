@@ -5,15 +5,18 @@ date = "2025-12-24"
 [taxonomies]
 categories = ["Short Posts"]
 tags = ["til", "evals", "openai"]
+
+[extra]
+cover = "evalrun_detail.png"
 +++
 
 [Hello Datasets! - AgentKitでシステムプロンプトを評価する](https://blog.mocobeta.dev/posts/20251219-hello-evals/)では，GUIからシステムプロンプトの評価データセットを作って評価を実行しましたが，[Evals API](https://platform.openai.com/docs/api-reference/evals)を使うと，プログラマブルに評価の作成や実行管理ができます。
 
-これは，OpenAIのダッシュボードGUI(Datasets)からぽちぽちと実行した[AgentKit Evalsで使えるLLM Grader - Score Model Grader](https://blog.mocobeta.dev/posts/20251222-evals-grader-2/)と同等のプロンプト評価をEvals APIで再現させてみたメモです。
+この記事は，[AgentKit Evalsで使えるLLM Grader - Score Model Grader](https://blog.mocobeta.dev/posts/20251222-evals-grader-2/)でGUIで作ったのと同等のプロンプト評価をEvals APIで再現したメモです。
 
 評価系のツールキットはだいたい学習に時間が必要ですが，Evals APIも難しい部類のツール（と思う）です。独特の癖に慣れるまでは少し頑張る必要がありそう。
 
-## リソース
+## リファレンス
 
 - Quickstart: [Working with evals](https://platform.openai.com/docs/guides/evals)
 - API doc: [Evals API Reference](https://platform.openai.com/docs/api-reference/evals)
@@ -39,7 +42,7 @@ tags = ["til", "evals", "openai"]
 
    [Get Eval Run](https://platform.openai.com/docs/api-reference/evals/getRun)で，実行したEval Runの結果を取得します。
 
-以下は具体的なコード例です。開発時はJupyter Notebookと，[Evalsダッシュボード](https://platform.openai.com/evaluation?tab=evals)を併用するのが便利です。Evalsダッシュボードでは，APIから作成したEvalやRunを確認できます。（ダッシュボードでEval/Eval Run作成もできますが，GUIのほうが手間がかかるので，作成はAPIを推奨です。）
+以下は具体的なコード例です。開発時はJupyter Notebookと，[Evalsダッシュボード](https://platform.openai.com/evaluation?tab=evals)を併用するのが便利です。Evalsダッシュボードでは，APIから作成したEvalやRunを確認できます。（ダッシュボードでEval/Eval Run作成もできますが，入力項目が多くGUIのほうが手間がかかるので，作成はAPIを推奨です。）
 
 ### 1. Evalオブジェクトを作成する
 
@@ -174,7 +177,7 @@ print(run)
 
 レスポンスに含まれる`id`を控えておきます（結果取得時に参照する）。
 
-なお，1. のEvalオブジェクト作成が成功しても，Runが失敗することがあります。不正な`testing-criteria`(Grader)が作られてしまい，実行時に失敗することがあるので，Runが失敗したらEvalの定義を頑張ってデバッグしましょう。私はEval定義の中の一部プロパティのint/floatのtypeが間違っていてRunに失敗して，デバッグに3時間かかってつらかった。Eval作成時のvalidationを厳しくしてくれるといいなあ。
+なお，1. のEvalオブジェクト作成が成功しても，Runが失敗することがあります。不正な`testing-criteria`(Grader)が作られてしまい，実行時に失敗することがあるので，Runが失敗したらEvalの定義を頑張ってデバッグしましょう。私はEval定義の中の一部プロパティのint/floatの型ミスでRunに失敗していて，デバッグに3時間かかってつらかった。Eval作成時のvalidationを厳しくしてくれるといいなあ。
 
 ### 4. Eval Runの結果を取得する
 
@@ -189,11 +192,10 @@ run = client.evals.runs.retrieve(
 print(run)
 ```
 
-レスポンスに，Graderの評価結果がすべて含まれています。
+レスポンスに，Evalで定義したGraderの評価結果がすべて含まれています。
 
 CIに組み込んだり，定時バッチで本番環境でのデグレ検出をする際には，おおむねこのような流れでいけそうです。
-
-Eval，Eval Runの作成以外に，削除や一覧取得，実行中Runの停止といった管理用APIが用意されています。
+またEval/Eval Runの作成の他，削除や一覧取得，実行中Runの停止といった管理APIが用意されています。
 
 ## EvalsのGUI（ダッシュボード）
 
