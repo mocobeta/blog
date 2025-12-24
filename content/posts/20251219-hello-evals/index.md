@@ -1,16 +1,24 @@
 +++
-title = "Hello Evals! - AgentKitでシステムプロンプトを評価する"
+title = "Hello Datasets! - AgentKitでシステムプロンプトを評価する"
 date = "2025-12-19"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "evals", "openai"]
+tags = ["til", "datasets", "evals", "openai"]
 
 [extra]
 cover = "evals_dashboard.png"
 +++
 
-OpenAIのAgentKitには，LLMのシステムプロンプトを評価するDatasets/Evalsというツールが含まれています。これはDatasets/Evalsを触ってみたメモです。
+**2025.12.24追記**
+
+この記事を公開した時のタイトルは「Hello Evals! - AgentKitでシステムプロンプトを評価する」でしたが，EvalsではなくGUIベースのDatasetsの話をしていたことに後で気づいて，「Hello Datasets!」に変更しました。
+
+OpenAI dashboardにはEvaluation(Datasets)と，Evaluation(Evals)があって，難しい...。
+
+**追記ここまで**
+
+OpenAIのAgentKitには，LLMのシステムプロンプトを評価するEvaluation(Datasets/Evals)というツールが含まれています。これはGUIで手軽に始められるDatasetsのほうを触ってみたメモです。
 
 ## リソース
 
@@ -20,11 +28,11 @@ OpenAIのAgentKitには，LLMのシステムプロンプトを評価するDatase
 - API Reference: [Evals](https://platform.openai.com/docs/api-reference/evals)
 - GitHub: [openai/evals](https://github.com/openai/evals)
 
-Evals周りは機能もリソースも豊富で，どこから手をつけていいか迷うのですが，私は[Building resilient prompts using an evaluation flywheel](https://cookbook.openai.com/examples/evaluation/building_resilient_prompts_using_an_evaluation_flywheel)というCookbookを参考にGetting Startedをしました。
+Evaluation周りは機能もリソースも豊富で，どこから手をつけていいか迷うのですが，私は[Building resilient prompts using an evaluation flywheel](https://cookbook.openai.com/examples/evaluation/building_resilient_prompts_using_an_evaluation_flywheel)というCookbookを参考にGetting Startedをしました。
 
-なおEvalsの利用方法にはDashboardのGUIとAPIがあり，GUIが手軽に始められます。CIに組み込んで継続的に評価を回す際にはAPIを使うことになります。
+なおEvaluationの利用方法にはDashboardのGUIとAPIがあり，GUIが手軽に始められます。CIに組み込んで継続的に評価を回す際にはAPIを使うことになります。
 
-## GUIで始めるEvals
+## GUIで始めるDatasets
 
 ### 1. Datasetを作成する
 
@@ -80,7 +88,7 @@ Web Searchなど，必要であればビルトインのツールを設定する�
 
 自然言語のフィードバックであればアノテーターが手動でフィードバックを入力します。Graderであれば，「Grade」ボタンを押して評価器を走らせます。
 
-ここまでで，Evalsの1ラウンドが終了です。
+ここまでで，評価の1ラウンドが終了です。
 
 ![evals-dashboard](./evals_dashboard.png)
 
