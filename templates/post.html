@@ -151,6 +151,11 @@ endif -%}
           {% set linkedin_icon = load_data(path="static/icon/linkedin.svg") %}
           {{ linkedin_icon | safe }}
         </a>
+        <a href="https://b.hatena.ne.jp/entry/{{ page.permalink }}"
+           target="_blank" rel="noopener noreferrer" aria-label="Hatena Bookmark">
+          {% set hatena_icon = load_data(path="static/icon/hatena.svg") %}
+          {{ hatena_icon | safe }}
+        </a>
       </div>
 
       {% if page.extra.reaction is defined %}{% set show_reaction = page.extra.reaction %}{% else %}{% set show_reaction
