@@ -18,6 +18,7 @@ endif -%}
 {% endblock desc %}
 
 {% block head %}
+<link rel="stylesheet" type="text/css" href="/share.css" />
 {% if config.markdown.highlight_theme == "css" %}
 <link id="hl" rel="stylesheet" type="text/css" href="/hl-{% if config.extra.force_theme == " dark" %}dark{% else
   %}light{% endif %}.css" />
@@ -127,6 +128,30 @@ endif -%}
         {{ page.content | safe }}
         {% endif %}
       </article>
+
+      <div class="share-buttons">
+        <span class="share-label">Share:</span>
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | urlencode }}&url={{ page.permalink | urlencode }}"
+           target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
+          {% set twitter_icon = load_data(path="static/icon/twitter.svg") %}
+          {{ twitter_icon | safe }}
+        </a>
+        <a href="https://bsky.app/intent/compose?text={{ page.title | urlencode }}%20{{ page.permalink | urlencode }}"
+           target="_blank" rel="noopener noreferrer" aria-label="Share on Bluesky">
+          {% set bluesky_icon = load_data(path="static/icon/bluesky.svg") %}
+          {{ bluesky_icon | safe }}
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.permalink | urlencode }}"
+           target="_blank" rel="noopener noreferrer" aria-label="Share on Facebook">
+          {% set facebook_icon = load_data(path="static/icon/facebook.svg") %}
+          {{ facebook_icon | safe }}
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.permalink }}"
+           target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+          {% set linkedin_icon = load_data(path="static/icon/linkedin.svg") %}
+          {{ linkedin_icon | safe }}
+        </a>
+      </div>
 
       {% if page.extra.reaction is defined %}{% set show_reaction = page.extra.reaction %}{% else %}{% set show_reaction
       = config.extra.reaction %}{% endif %}
