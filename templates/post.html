@@ -131,10 +131,10 @@ endif -%}
 
       <div class="share-buttons">
         <span class="share-label">Share:</span>
-        <a href="https://twitter.com/intent/tweet?text={{ page.title | urlencode }}&url={{ page.permalink | urlencode }}"
-           target="_blank" rel="noopener noreferrer" aria-label="Share on Twitter">
-          {% set twitter_icon = load_data(path="static/icon/twitter.svg") %}
-          {{ twitter_icon | safe }}
+        <a href="https://x.com/intent/post?text={{ page.title | urlencode }}&url={{ page.permalink | urlencode }}"
+           target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+          {% set x_icon = load_data(path="static/icon/x.svg") %}
+          {{ x_icon | safe }}
         </a>
         <a href="https://bsky.app/intent/compose?text={{ page.title | urlencode }}%20{{ page.permalink | urlencode }}"
            target="_blank" rel="noopener noreferrer" aria-label="Share on Bluesky">
