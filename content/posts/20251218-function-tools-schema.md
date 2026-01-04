@@ -4,7 +4,7 @@ date = "2025-12-18"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 Agents SDKでは，[`@function_tool`デコレータ](https://openai.github.io/openai-agents-python/tools/#function-tools)を普通のPython関数に付与すると，[Responses APIのFunction](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)としてシームレスに登録できます。このマジックがどう実装されているのか，ソースコードを覗いてみました。

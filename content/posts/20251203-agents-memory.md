@@ -4,7 +4,7 @@ date = "2025-12-03"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 [以前の記事](https://blog.mocobeta.dev/posts/20251201-my-first-agent/)で，「エージェントとは、指示とツールで構成された大規模言語モデル（LLM）」という（OpenAIの）定義を紹介しました。「ツール＋LLM」で十分な場合もありますが，とはいえ，なんらかのヒューマンインターフェースを備えた「人の相手ができるAIエージェント」を作ろうとすると，もうひとつ大事な要素があります。「記憶（Memory）」ですね。

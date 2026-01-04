@@ -4,7 +4,7 @@ date = "2025-12-12"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 [昨日のエントリ](https://blog.mocobeta.dev/posts/20251211-agents-handoff/)で，ひとつ大きく勘違いをしていた点があったので，改めてHandoffsパターンについて書きます。

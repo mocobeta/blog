@@ -4,7 +4,7 @@ date = "2025-12-11"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 Agents SDKは，複数のエージェントを組み合わせるオーケストレーションの仕組みを強力にサポートしています。

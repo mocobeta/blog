@@ -4,7 +4,7 @@ date = "2025-12-17"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 [昨日のエントリ](https://blog.mocobeta.dev/posts/20251216-agents-input-guardrail/)では，Agents SDKの入力ガードレールを紹介しました。今日は出力ガードレールについてです。入力ガードレールはユーザーの入力に対して動作しますが，出力ガードレールはエージェントの出力に対して動作します。

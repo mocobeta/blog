@@ -4,7 +4,7 @@ date = "2025-12-05"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 
 [extra]
 cover = "cookies1.jpg"

@@ -4,7 +4,7 @@ date = "2025-12-09"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai", "chatkit"]
+tags = ["til", "ai-agents", "openai", "chatkit"]
 +++
 
 [ChatKitの会話履歴の構造](https://blog.mocobeta.dev/posts/20251208-chatkit-thread/)の続きです。[ChatKitで添付ファイルをエージェントに渡して解析させる](https://blog.mocobeta.dev/posts/20251207-file-attachment-chatkit/)で作ったデモチャットアプリの会話履歴をSQLiteのデータベースに保存して，どんなデータが保存されるか，中身を覗いてみます。

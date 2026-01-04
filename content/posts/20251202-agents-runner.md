@@ -4,7 +4,7 @@ date = "2025-12-02"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 # Agentを実行する

@@ -4,7 +4,7 @@ date = "2025-12-10"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 Responses APIなど，OpenAI LLM APIに送信したリクエスト（プロンプト）と，レスポンスのログは，OpenAIのダッシュボードのLogsセクションから確認できます。

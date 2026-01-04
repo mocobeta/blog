@@ -4,7 +4,7 @@ date = "2025-12-04"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai", "chatkit"]
+tags = ["til", "ai-agents", "openai", "chatkit"]
 +++
 
 [前回](https://blog.mocobeta.dev/posts/20251203-agents-memory/)まではAgents SDKだけを使って，コマンドラインで動作する対話エージェントを作りました。WebアプリケーションのチャットGUIのためのツールキットとして，[ChatKit](https://platform.openai.com/docs/guides/chatkit)があります。本エントリでは，前回作ったエージェントにミニマムなWeb GUIをつけてみます。

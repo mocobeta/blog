@@ -4,7 +4,7 @@ date = "2025-12-15"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 `Runner.run()`メソッドの返す`RunResult`または`RunResultStreaming`オブジェクトから，エージェントのトークン使用量が取れます。

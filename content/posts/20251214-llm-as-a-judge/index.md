@@ -4,7 +4,7 @@ date = "2025-12-14"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 生成AIの出力をLLM自身に評価させるLLM-as-a-Judgeパターンを，Agents SDKで実装してみた話です。

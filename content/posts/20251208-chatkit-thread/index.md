@@ -4,7 +4,7 @@ date = "2025-12-08"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai", "chatkit"]
+tags = ["til", "ai-agents", "openai", "chatkit"]
 +++
 
 ChatKitでは，会話履歴を`Thread`という単位で管理しています。（ややこしいですが，[以前のエントリ](https://blog.mocobeta.dev/posts/20251203-agents-memory/)で少し触れたAgents SDKの`Session`とは別物です。）

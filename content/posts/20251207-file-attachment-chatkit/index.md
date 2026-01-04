@@ -4,7 +4,7 @@ date = "2025-12-07"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai", "chatkit"]
+tags = ["til", "ai-agents", "openai", "chatkit"]
 +++
 
 昨日のエントリ『[ChatKitでファイルアップロード機能を実装する](https://blog.mocobeta.dev/posts/202512006-file-upload-chatkit/)』では，ChatKitのチャットUIにファイルアップロード機能を追加しました。今回は，アップロードされた添付ファイルをエージェントが使うコンテキストとして利用できるように，添付ファイルをLLMへの入力に変換します。

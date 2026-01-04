@@ -4,7 +4,7 @@ date = "2025-12-13"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 [昨日のエントリ](https://blog.mocobeta.dev/posts/20251212-agents-handoffs-2/)では，Agents SDKのエージェントオーケストレーションパターンの一つ，Handoffsを紹介しました。今日は，Handoffsとよく似ているが異なるもう一つのパターン，[Agents as Tools](https://openai.github.io/openai-agents-python/tools/#agents-as-tools)について。

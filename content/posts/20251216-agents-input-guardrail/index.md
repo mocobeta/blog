@@ -4,7 +4,7 @@ date = "2025-12-16"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "agents", "openai"]
+tags = ["til", "ai-agents", "openai"]
 +++
 
 Agents SDKには，ユーザー入力やエージェントの出力をチェックする[Guardrails](https://openai.github.io/openai-agents-python/guardrails/)という仕組みがあります。ユーザーの入力をチェックするのが入力ガードレール，エージェントの出力をチェックするのが出力ガードレールです。ガードレールは，メインエージェントの前後にフックされる補助エージェントとして実装されるので，エージェントオーケストレーションの一種といえます（と思います）。
