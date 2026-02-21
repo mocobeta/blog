@@ -6,7 +6,7 @@ lang = 'en'
 
 name = "Keep Coding"
 id = "mocobeta"
-bio = "software engineer who loves search (engines) and coding"
+bio = "software engineer in Search/AI"
 avatar = "img/avatar.webp"
 
 display_id = true
@@ -27,4 +27,4 @@ links = [
 date_format = "%Y-%m-%d"
 +++
 
-Hi there 👋, I am a software engineer who loves search (engines) and coding.
+Hi there 👋, I am a software engineer who loves search (engines) and AI/LLM.
