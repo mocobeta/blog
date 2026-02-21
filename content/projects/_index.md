@@ -1,8 +1,11 @@
 +++
 title = "My Projects"
 description = "My projects page."
-template = "projects.html"
+template = "prose.html"
 
 [extra]
+title = "Projects"
 lang = 'en'
 +++
+
+{{ collection(file="data.toml") }}

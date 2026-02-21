@@ -4,7 +4,7 @@ date = "2025-03-01"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["prose"]
+tags = ["prose", "gadget"]
 +++
 
 自宅の作業環境をここ1年ほどでちょっとずつアップデートしていて，だいたい落ち着いてきたので，あれ型番（スペック）なんだっけ？という時のためのメモ。
