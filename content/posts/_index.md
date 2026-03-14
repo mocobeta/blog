@@ -1,5 +1,5 @@
 +++
-title = "Keep Coding by @mocobeta"
+title = "Keep Building by @mocobeta"
 description = "Blog by a software engineer who loves search and coding"
 sort_by = "date"
 template = "blog.html"

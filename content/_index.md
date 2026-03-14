@@ -4,7 +4,7 @@ template = 'home.html'
 [extra]
 lang = 'en'
 
-name = "Keep Coding"
+name = "Keep Building"
 id = "mocobeta"
 bio = "software engineer in Search/AI"
 avatar = "img/avatar.webp"

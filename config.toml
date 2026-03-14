@@ -6,7 +6,7 @@
 #=========================================================================================
 
 base_url = "https://blog.mocobeta.dev"
-title = "Keep Coding"
+title = "Keep Building"
 description = "Blog by a software engineer who loves search (engines) and coding"
 default_language = "en"
 theme = "serene"
