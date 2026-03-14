@@ -38,8 +38,7 @@ tags = ["agentic coding"]
 
 <span style="color: blue; ">青字</span>：コーデイングエージェントがやること
 
-1. 準備：Codex にLinear MCPサーバーをインストールしておく。
-   準備：実装中に無駄なapprove待ちが起こらないように，実装作業で必要なコマンドへのpermissionをCodexに与えておく。
+1. 準備：Codex にLinear MCPサーバーをインストールしておく。実装中に無駄なapprove待ちが起こらないように，実装作業で必要なコマンドへのpermissionをCodexに与えておく。
 2. <span style="color: red; ">LinearにIssueを立てる（セーブポイント①）</span>
     - Issueタイトルはタスクのゴールを書く。
     - Issue本文にはどうやってゴールを達成するかを書く。要件，実装方針，テスト方針など，それぞれ数行程度で，宣言的に明確に言語化しておく。
