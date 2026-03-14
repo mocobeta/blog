@@ -49,7 +49,7 @@ tags = ["agentic coding"]
 5. <span style="color: blue; ">Issueコメントに書いた実装計画をCodexに読ませて実装計画通りに実装させる</span>
 6. <span style="color: blue; ">CodexにPRを作成させる（セーブポイント③）</span>
 7. <span style="color: blue; ">Review AgentにPRレビューさせる（CI workflow）</span>
-8. <span style="color: red; ">レビュー指摘をざっと全部読んで，対応が必要な指摘を残してResolve</span>
+8. <span style="color: red; ">レビュー指摘をざっと全部読んで，対応しないと決めたコメントは理由を書いてResolve</span>
     - **レビュー指摘をスルーしない。大抵の不具合と障害はReview Agentのレビュー指摘にきちんと対応していれば防げる。**
 9. <span style="color: blue; ">Codexにレビューコメントへ対応させる</span>
 10. <span style="color: red; ">成果物の実装と動作をざっと確認</span>
