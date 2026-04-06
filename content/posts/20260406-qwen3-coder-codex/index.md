@@ -4,7 +4,7 @@ date = "2026-04-06"
 
 [taxonomies]
 categories = ["Long Posts"]
-tags = ["agentic coding"]
+tags = ["agentic coding", "codex", "qwen3"]
 
 [extra]
 cover = "qwen3coder-codex-ollama.png"
