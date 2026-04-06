@@ -120,7 +120,7 @@ ChatGPTに生成させたプロキシのコードを[こちら](https://github.c
 
 ### スキルが探せない，探せても実行中に失敗する
 
-これも多分Codexとの相性ですが，Vanilaの状態だとスキルをうまく使ってくれません。インストラクションにスキルについての注意を書きます。
+これも多分Codexとの相性ですが，Vanillaの状態だとスキルをうまく使ってくれません。インストラクションにスキルについての注意を書きます。
 
 [Skill Handling](https://github.com/mocobeta/dotfiles/blob/main/.codex/qwen3coder-instructions.md#skill-handling)
 
