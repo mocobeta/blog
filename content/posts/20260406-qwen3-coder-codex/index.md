@@ -10,6 +10,8 @@ tags = ["agentic coding"]
 cover = "qwen3coder-codex-ollama.png"
 +++
 
+![](qwen3coder-codex-ollama.png)
+
 ## この記事は何
 
 [Qwen3-Coder](https://qwen.ai/blog?id=qwen3-coder) の30Bモデルを [Codex](https://openai.com/ja-JP/codex/) のバックエンドモデルに指定して，「個人開発レベルで使える」ことを目指しました。
