@@ -67,8 +67,6 @@ model_catalog_json = "~/.codex/catalogs/models-qwen3-ollama.json"
 
 Codexのバージョンによってモデルカタログの仕様が変わりますが，2026/3時点では [models-qwen3-ollama.json](https://github.com/mocobeta/dotfiles/blob/main/.codex/catalogs/models-qwen3-ollama.json) で通りました。
 
-※と思ったら，最近のアップデートでモデルカタログを指定しなくても警告が出なくなったようので，いらないのかも
-
 ### Codex経由だと起動後の初回レスポンスがものすごく遅い
 
 Ollamaプロセスを確認して，「PROCESSORが100% GPUになっているか（CPUにオフロードされていないか）」と「CONTEXTが65536よりも大きすぎないか」を見ます。前者については説明はいらないかと思います。後者については，コンテキストウィンドウが大きすぎるとKVキャッシュのウォームアップで時間を取られるようで，coding agentで使う際の最小推奨コンテキストウィンドウの64kに近い値を指定すると立ち上がりが速くなります。Ollamaのコンテキストウィンドウサイズの調整方法は，一番簡単なのはollamaサービス起動時の環境変数で`OLLAMA_CONTEXT_LENGTH=65536`のように指定します。
