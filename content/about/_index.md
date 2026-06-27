@@ -15,15 +15,17 @@ reaction = false
 
 Hello, I'm Tomoko Uchida (打田智子), a.k.a mocobeta. (she/her)
 
-I am a Search/AI engineer, and technical book author. I'm passionate about building software and engaging in open source projects.
+I am a software engineer and technical book author. I'm passionate about developing search and AI apps/algorithms. I also love engaging in open-source projects.
 
-My favorite programming languages are Rust, Python, and Java. I like Arch Linux as my development environment.
+My favorite programming languages are Rust, Python, and Java. I like Arch Linux and Zed editor as my development environment.
 
 ## OSS Products and Publications
 
 Listed in [projects](/projects)
 
 ## Talks
+
+2026/06 [【2026年版】 ベクトル検索とEmbedding最前線](https://speakerdeck.com/mocobeta/2026nian-ban-bekutorujian-suo-embeddingzui-qian-xian) (Encraft #25 生成AI時代の検索設計)
 
 2019/10 [Lucene Kuromoji のコードを読む会 （辞書ビルダー編）](https://speakerdeck.com/mocobeta/lucene-kuromoji-nokodowodu-muhui-ci-shu-birudabian) (検索技術勉強会スピンオフ回)
 
@@ -40,4 +42,3 @@ GitHub [@mocobeta](https://github.com/mocobeta)
 Bluesky [@mocobeta.dev](https://bsky.app/profile/mocobeta.dev)
 
 E-mail [contact@mocobeta.dev](mailto:contact@mocobeta.dev)
-

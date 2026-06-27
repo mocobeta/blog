@@ -27,4 +27,4 @@ links = [
 date_format = "%Y-%m-%d"
 +++
 
-Hi there 👋, I am a software engineer who loves search (engines) and AI/LLM.
+Hi there 👋, I am a software engineer who loves search (engines) and AI.
