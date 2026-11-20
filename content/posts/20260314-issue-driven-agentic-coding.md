@@ -5,6 +5,9 @@ date = "2026-03-14"
 [taxonomies]
 categories = ["Short Posts"]
 tags = ["agentic coding", "codex", "qwen3-coder"]
+
+[extra]
+categorized = true
 +++
 
 プロダクションコードやコードを生成するためのプロンプトを人が書くと，

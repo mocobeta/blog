@@ -8,4 +8,4 @@ title = "Projects"
 lang = 'en'
 +++
 
-{{ collection(file="data.toml") }}
+{{ <collection file="data.toml" section /> }}
