@@ -6,7 +6,7 @@ taxonomies:
   - Short Posts
   tags:
   - til
-  - ai agent
+  - ai-agent
 ---
 
 出典：[Building always-on agents（Anthropic）](<https://claude.com/resources/articles/building-always-on-agents>)

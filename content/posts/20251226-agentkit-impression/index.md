@@ -4,7 +4,7 @@ date = "2025-12-26"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["prose", "ai-agents", "openai"]
+tags = ["prose", "ai-agent", "openai"]
 
 [extra]
 cover = "adventar2025.png"

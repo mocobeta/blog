@@ -4,7 +4,7 @@ date = "2025-04-13"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "llm", "AI agent"]
+tags = ["til", "llm", "ai-agent"]
 +++
 
 ## AI agentのためのデザインパターン

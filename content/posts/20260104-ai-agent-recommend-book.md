@@ -4,7 +4,7 @@ date = "2026-01-04"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["ai-agents", "book"]
+tags = ["ai-agent", "book"]
 +++
 
 （アフィリエイト記事みたいなタイトルですが，アフィリエイトリンクを含みます。）

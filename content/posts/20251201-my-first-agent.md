@@ -4,7 +4,7 @@ date = "2025-12-01"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "ai-agents", "openai"]
+tags = ["til", "ai-agent", "openai"]
 +++
 
 最近仕事で，AIエージェントの開発に関わっています。現職（現配属チーム）では，エージェントフレームワークとしてOpenAI AgentKitを使っています。

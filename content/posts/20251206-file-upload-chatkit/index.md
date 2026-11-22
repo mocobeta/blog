@@ -4,7 +4,7 @@ date = "2025-12-06"
 
 [taxonomies]
 categories = ["Short Posts"]
-tags = ["til", "ai-agents", "openai", "chatkit"]
+tags = ["til", "ai-agent", "openai", "chatkit"]
 +++
 
 [前回](https://blog.mocobeta.dev/posts/20251205-files-api-agent/)はAgents SDKでファイルを解析するエージェントを作りました。ファイルを扱うにはやっぱりGUIがほしいので，ChatKitでファイルアップロードのインタフェースを実装してみます。
