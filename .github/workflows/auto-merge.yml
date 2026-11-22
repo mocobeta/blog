@@ -1,0 +1,83 @@
+name: Auto-merge labeled pull requests
+
+on:
+  pull_request_target:
+    types: [labeled]
+  check_run:
+    types: [completed]
+  schedule:
+    # GitHub Actions checks do not trigger check_run workflows.
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+
+permissions:
+  checks: read
+  contents: write
+  pull-requests: read
+  statuses: read
+
+concurrency:
+  group: auto-merge
+
+jobs:
+  merge:
+    if: github.event_name != 'pull_request_target' || github.event.label.name == 'auto-merge'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Merge pull requests with passing checks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          repo="repos/$GITHUB_REPOSITORY"
+          candidates=$(gh api --paginate "$repo/pulls?state=open&per_page=100" |
+            jq -r '.[] | select(.draft == false and any(.labels[]; .name == "auto-merge")) | .number')
+
+          eligible_pr='select(.state == "open" and .draft == false and .mergeable == true
+            and any(.labels[]; .name == "auto-merge"))
+            | select(.head.sha != null and .merge_commit_sha != null)
+            | [.head.sha, .merge_commit_sha] | @tsv'
+
+          failed=0
+          for number in $candidates; do
+            pr="$repo/pulls/$number"
+            commits=$(gh api "$pr" | jq -r "$eligible_pr")
+            if [[ -z "$commits" ]]; then
+              continue
+            fi
+            read -r head merge_commit <<< "$commits"
+
+            # Checks can be posted to either the head or the test merge commit.
+            results=$(
+              for sha in "$head" "$merge_commit"; do
+                gh api --paginate "$repo/commits/$sha/check-runs?filter=latest&per_page=100" || exit 1
+                gh api "$repo/commits/$sha/status" || exit 1
+              done
+            )
+            if ! jq -es '
+              map(if has("check_runs") then
+                .check_runs[] | (.status == "completed" and .conclusion == "success")
+              else
+                select(.total_count > 0) | .state == "success"
+              end)
+              | length > 0 and all(.)
+            ' <<< "$results" > /dev/null; then
+              echo "PR #$number is waiting for successful checks."
+              continue
+            fi
+
+            # Recheck the label and both SHAs before the merge request.
+            current_commits=$(gh api "$pr" | jq -r "$eligible_pr")
+            if [[ "$current_commits" != "$commits" ]]; then
+              continue
+            fi
+            if gh api --method PUT "$pr/merge" -f sha="$head" -f merge_method=merge --jq '.merged' |
+              jq -e '. == true' > /dev/null; then
+              echo "Merged PR #$number."
+            else
+              echo "::error::Could not merge PR #$number."
+              failed=1
+            fi
+          done
+          exit "$failed"
